@@ -54,6 +54,55 @@ pre, .video-container {
     margin-bottom: 1.5rem;
 }
 
+/* Larger video container for expanded state */
+.video-container iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Collapsible Animation Section */
+.animation-section {
+    margin-bottom: 2rem;
+}
+
+.animation-toggle {
+    width: 100%;
+    background-color: #21262d;
+    border: 1px solid var(--bs-border-color);
+    color: #c9d1d9;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.animation-toggle:hover {
+    background-color: #30363d;
+}
+
+.animation-toggle .toggle-icon {
+    transition: transform 0.3s ease;
+}
+
+.animation-toggle[aria-expanded="true"] .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.animation-content {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    background-color: #0d1117;
+    border: 1px solid var(--bs-border-color);
+    border-radius: 8px;
+}
+
 .mermaid svg {
     display: block;
     margin: 0 auto;
