@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environment Variables</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="menu-placeholder"></div>
+    <div class="container">
+        <h1>Concept: Environment Variables</h1>
+
+        <!-- Part 1: Concept -->
+        <h2>🧠 The Concept</h2>
+        <p>Environment variables are values that live outside of an application's code, in the environment where the app runs. They are used to configure an application, for example, to store sensitive data like API keys instead of writing them directly in the code.</p>
+        <pre class="mermaid">
+            graph LR
+                subgraph External Config
+                    A[.env file <br> API_KEY=xyz123]
+                end
+                subgraph Docker Container
+                    B{App reads <br> process.env.API_KEY}
+                end
+                A -- Injected at Runtime --> B
+        </pre>
+
+        <!-- Part 2: Animation Idea -->
+        <h2>🎬 Animation Idea</h2>
+        <p>This animation clearly shows that configuration is injected from an external source at runtime, decoupling it from the application code.</p>
+        <video src="../animations/7-env-variables.mp4" autoplay loop muted playsinline style="width:100%; max-width:500px; display:block; margin: 20px auto; border-radius: 8px; background-color: #21262d;"></video>
+
+        <!-- Part 3: Steps in Canva -->
+        <h2>📝 Steps in Canva</h2>
+        <ol>
+            <li><strong>Icons:</strong> Add an icon for a `.env` file and another for a Docker container.</li>
+            <li><strong>Placeholder:</strong> Inside the container icon, add placeholder text like `[DATABASE_URL]`.</li>
+            <li><strong>Injection:</strong> Animate a line of text (the actual secret value) <strong>"Drifting"</strong> from the `.env` file to the container.</li>
+            <li><strong>Replacement:</strong> As the value arrives, make the placeholder text <strong>"Fade"</strong> out and the new value <strong>"Fade"</strong> in.</li>
+        </ol>
+
+        <!-- Part 4: Process in Detail -->
+        <h2>🖱️ Process in Detail</h2>
+        <p>Follow these clicks to create the animation in Canva:</p>
+        <ul>
+            <li><strong>Step 1: Setup.</strong> Create a new "Video" design.</li>
+            <li><strong>Step 2: Add Elements.</strong> In "Elements", add a "file" icon and a "docker" or "container" icon. Add text inside the container like `[API_KEY]`.</li>
+            <li><strong>Step 3: Animate Injection.</strong>
+                <ul>
+                    <li>Add a text element next to the file icon with the secret value (e.g., `xyz123`).</li>
+                    <li>Select this text element, click "Animate" > <strong>"Drift"</strong>, and set its path to move over the placeholder text in the container.</li>
+                </ul>
+            </li>
+            <li><strong>Step 4: Animate Replacement.</strong>
+                <ul>
+                    <li>Select the placeholder text. Click "Animate" > <strong>"Fade"</strong> and set it to "On Exit".</li>
+                    <li>Select the secret value text again. Add a second animation: <strong>"Fade"</strong> set to "On Enter".</li>
+                </ul>
+            </li>
+            <li><strong>Step 5: Adjust Timing.</strong> In the timeline, make the secret value's "Drift" happen first. Then, have the placeholder's "Fade" out and the secret's "Fade" in happen simultaneously.</li>
+            <li><strong>Step 6: Download.</strong> Click "Share" → "Download" → "MP4 Video".</li>
+        </ul>
+    </div>
+    <script src="../shared-menu.js" defer></script>
+</body>
+</html>

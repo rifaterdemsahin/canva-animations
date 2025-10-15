@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="menu-placeholder"></div>
+    <div class="container">
+        <h1>Concept: CSS Box Model</h1>
+
+        <!-- Part 1: Concept -->
+        <h2>🧠 The Concept</h2>
+        <p>In web design, every HTML element is a rectangular box. The CSS Box Model describes the layers of this box: the `content` area, surrounded by `padding`, a `border`, and finally an outer `margin`.</p>
+        <pre class="mermaid">
+            graph TD
+                M(Margin) --> B(Border)
+                B --> P(Padding)
+                P --> C[Content]
+                style M fill:#333,stroke:#fff,stroke-width:2px
+                style B fill:#555,stroke:#fff,stroke-width:2px
+                style P fill:#777,stroke:#fff,stroke-width:2px
+                style C fill:#999,stroke:#fff,stroke-width:2px
+        </pre>
+
+        <!-- Part 2: Animation Idea -->
+        <h2>🎬 Animation Idea</h2>
+        <p>This animation builds the box model layer by layer, making the relationship between the different parts intuitive and easy to remember.</p>
+        <video src="../animations/6-css-box-model.mp4" autoplay loop muted playsinline style="width:100%; max-width:500px; display:block; margin: 20px auto; border-radius: 8px; background-color: #21262d;"></video>
+
+        <!-- Part 3: Steps in Canva -->
+        <h2>📝 Steps in Canva</h2>
+        <ol>
+            <li><strong>Content:</strong> Start with a box in the center for the Content.</li>
+            <li><strong>Padding:</strong> Animate a second box appearing around it using <strong>"Breathe"</strong>.</li>
+            <li><strong>Border:</strong> Animate a third box appearing with <strong>"Wipe"</strong>.</li>
+            <li><strong>Margin:</strong> Animate the final outer box with <strong>"Fade"</strong>.</li>
+        </ol>
+
+        <!-- Part 4: Process in Detail -->
+        <h2>🖱️ Process in Detail</h2>
+        <p>Follow these clicks to create the animation in Canva:</p>
+        <ul>
+            <li><strong>Step 1: Setup.</strong> Create a new "Video" design.</li>
+            <li><strong>Step 2: Create Boxes.</strong> In "Elements", add four different colored, nested rectangle shapes. Place the smallest "Content" box in the center, then a larger "Padding" box behind it, and so on.</li>
+            <li><strong>Step 3: Animate Layers.</strong>
+                <ul>
+                    <li>Select the "Padding" box. Click "Animate" > <strong>"Breathe"</strong>.</li>
+                    <li>Select the "Border" box. Click "Animate" > <strong>"Wipe"</strong>.</li>
+                    <li>Select the outer "Margin" box. Click "Animate" > <strong>"Fade"</strong>.</li>
+                </ul>
+            </li>
+            <li><strong>Step 4: Adjust Timing.</strong> Open the timeline. Stagger the animations so the Content appears first, then Padding, then Border, then Margin.</li>
+            <li><strong>Step 5: Download.</strong> Click "Share" → "Download" → "MP4 Video".</li>
+        </ul>
+    </div>
+    <script src="../shared-menu.js" defer></script>
+</body>
+</html>

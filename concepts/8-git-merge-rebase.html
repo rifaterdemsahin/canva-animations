@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Merge vs. Rebase</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="menu-placeholder"></div>
+    <div class="container">
+        <h1>Concept: Git Merge vs. Rebase</h1>
+
+        <!-- Part 1: Concept -->
+        <h2>🧠 The Concept</h2>
+        <p>`git merge` and `git rebase` are two ways to integrate changes from one branch into another. `merge` creates a new "merge commit" that ties the two histories together. `rebase` rewrites history by replaying commits from the feature branch on top of the main branch, resulting in a linear history.</p>
+        <pre class="mermaid">
+            graph TD
+                subgraph "Result of Git Merge"
+                    A[main] --> C(Merge Commit)
+                    B[feature] --> C
+                end
+                subgraph "Result of Git Rebase"
+                    D[main] --> E[feature's work] --> F[re-applied]
+                end
+        </pre>
+
+        <!-- Part 2: Animation Idea -->
+        <h2>🎬 Animation Idea</h2>
+        <p>This provides a direct visual comparison of the two commands, highlighting the critical difference in their resulting project history (a new commit vs. a linear sequence).</p>
+        <video src="../animations/8-git-merge-rebase.mp4" autoplay loop muted playsinline style="width:100%; max-width:500px; display:block; margin: 20px auto; border-radius: 8px; background-color: #21262d;"></video>
+
+        <!-- Part 3: Steps in Canva -->
+        <h2>📝 Steps in Canva</h2>
+        <ol>
+            <li><strong>Branches:</strong> Show two separate branches (lines with commits).</li>
+            <li><strong>Merge:</strong> Animate two lines from the ends of both branches coming together to form a new "merge commit" using <strong>"Wipe"</strong>.</li>
+            <li><strong>Rebase:</strong> Animate the feature branch's commits lifting off and re-attaching one-by-one to the end of the main branch using <strong>"Pop"</strong> or <strong>"Drift"</strong>.</li>
+        </ol>
+
+        <!-- Part 4: Process in Detail -->
+        <h2>🖱️ Process in Detail</h2>
+        <p>Follow these clicks to create the animation in Canva:</p>
+        <ul>
+            <li><strong>Step 1: Setup.</strong> Create a new "Video" design. On the left, show two branches. On the right, show the same two branches.</li>
+            <li><strong>Step 2: Animate Merge (Left Side).</strong>
+                <ul>
+                    <li>Draw two short lines that connect the ends of both branches to a new circle (the merge commit).</li>
+                    <li>Select these new lines and the circle. Animate them with <strong>"Wipe"</strong> and <strong>"Fade"</strong> respectively.</li>
+                </ul>
+            </li>
+            <li><strong>Step 3: Animate Rebase (Right Side).</strong>
+                <ul>
+                    <li>Select the commits from the feature branch. Animate them with <strong>"Drift"</strong> to move them to the end of the main branch.</li>
+                    <li>Use the timeline to make them move one after the other.</li>
+                </ul>
+            </li>
+            <li><strong>Step 4: Download.</strong> Click "Share" → "Download" → "MP4 Video".</li>
+        </ul>
+    </div>
+    <script src="../shared-menu.js" defer></script>
+</body>
+</html>

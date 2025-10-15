@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Branching</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="menu-placeholder"></div>
+    <div class="container">
+        <h1>Concept: Git Branching</h1>
+
+        <!-- Part 1: Concept -->
+        <h2>🧠 The Concept</h2>
+        <p>Git branching allows developers to work on new features or bug fixes in an isolated environment without affecting the main codebase (the `main` branch). Once the work is complete, the feature branch can be merged back into the main branch.</p>
+        <pre class="mermaid">
+            gitGraph
+               commit
+               commit id: "feat: initial work"
+               branch feature-branch
+               checkout feature-branch
+               commit
+               checkout main
+               commit id: "fix: bug in main"
+               merge feature-branch
+        </pre>
+
+        <!-- Part 2: Animation Idea -->
+        <h2>🎬 Animation Idea</h2>
+        <p>This animation provides a clear visual of how a new line of development is created from a specific point in the project's history, and then merged back in.</p>
+        <video src="../animations/3-git-branching.mp4" autoplay loop muted playsinline style="width:100%; max-width:500px; display:block; margin: 20px auto; border-radius: 8px; background-color: #21262d;"></video>
+
+        <!-- Part 3: Steps in Canva -->
+        <h2>📝 Steps in Canva</h2>
+        <ol>
+            <li><strong>Main Branch:</strong> Create a solid line with circles on it representing commits.</li>
+            <li><strong>Feature Branch:</strong> Animate a new dashed line branching off from the main line using the <strong>"Wipe"</strong> effect.</li>
+            <li><strong>Commits:</strong> Have new commit circles appear on the feature branch using the <strong>"Pop"</strong> animation.</li>
+            <li><strong>Merge:</strong> Animate the feature branch line merging back into the main line.</li>
+        </ol>
+
+        <!-- Part 4: Process in Detail -->
+        <h2>🖱️ Process in Detail</h2>
+        <p>Follow these clicks to create the animation in Canva:</p>
+        <ul>
+            <li><strong>Step 1: Setup.</strong> Create a new "Video" design.</li>
+            <li><strong>Step 2: Create Main Branch.</strong> Use the "Line" element to draw a straight horizontal line. Add small circles on top for commits. Group them together.</li>
+            <li><strong>Step 3: Animate Branching.</strong>
+                <ul>
+                    <li>Draw a new dashed line that starts from the main line and goes upwards at an angle.</li>
+                    <li>Select the dashed line, click "Animate" > <strong>"Wipe"</strong>. This will make it look like it's being drawn.</li>
+                    <li>Add new circle elements on the new branch. Select them and choose the <strong>"Pop"</strong> or <strong>"Fade"</strong> animation.</li>
+                </ul>
+            </li>
+            <li><strong>Step 4: Adjust Timing.</strong> Use the timeline to make the `Wipe` animation happen first, followed by the `Pop` animations for the new commits.</li>
+            <li><strong>Step 5: Download.</strong> Click "Share" → "Download" → "MP4 Video".</li>
+        </ul>
+    </div>
+    <script src="../shared-menu.js" defer></script>
+</body>
+</html>

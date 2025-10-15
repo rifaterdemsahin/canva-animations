@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Request/Response</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="menu-placeholder"></div>
+    <div class="container">
+        <h1>Concept: API Request/Response</h1>
+
+        <!-- Part 1: Concept -->
+        <h2>🧠 The Concept</h2>
+        <p>An API (Application Programming Interface) allows two computer systems to communicate. One system (the client) sends a `request` for data, and the other system (the server) sends back a `response` containing the data or a status message.</p>
+        <pre class="mermaid">
+            sequenceDiagram
+                participant Client
+                participant Server
+                Client->>Server: GET /api/data (Request)
+                activate Server
+                Server-->>Client: 200 OK [JSON Data] (Response)
+                deactivate Server
+        </pre>
+
+        <!-- Part 2: Animation Idea -->
+        <h2>🎬 Animation Idea</h2>
+        <p>This animation makes the abstract concept of a client-server data exchange tangible and easy for beginners to follow by visualizing the data as a traveling object.</p>
+        <video src="../animations/4-api-cycle.mp4" autoplay loop muted playsinline style="width:100%; max-width:500px; display:block; margin: 20px auto; border-radius: 8px; background-color: #21262d;"></video>
+
+        <!-- Part 3: Steps in Canva -->
+        <h2>📝 Steps in Canva</h2>
+        <ol>
+            <li><strong>Icons:</strong> Add a laptop icon for the Client and a server icon for the Server.</li>
+            <li><strong>Request:</strong> Animate an envelope icon traveling from the laptop to the server using <strong>"Drift"</strong>.</li>
+            <li><strong>Processing:</strong> Make the server icon <strong>"Pulse"</strong> once to show it's working.</li>
+            <li><strong>Response:</strong> Animate a different colored envelope traveling back from the server to the laptop.</li>
+        </ol>
+
+        <!-- Part 4: Process in Detail -->
+        <h2>🖱️ Process in Detail</h2>
+        <p>Follow these clicks to create the animation in Canva:</p>
+        <ul>
+            <li><strong>Step 1: Setup.</strong> Create a new "Video" design.</li>
+            <li><strong>Step 2: Add Icons.</strong> In "Elements", search for and add a "laptop" icon and a "server" icon, placing them on opposite sides of the canvas.</li>
+            <li><strong>Step 3: Animate Request.</strong>
+                <ul>
+                    <li>Add an "envelope" icon near the laptop.</li>
+                    <li>Select the envelope, click "Animate". Choose the <strong>"Drift"</strong> animation and set its path towards the server.</li>
+                </ul>
+            </li>
+            <li><strong>Step 4: Animate Server & Response.</strong>
+                <ul>
+                    <li>Click the server icon. Choose the <strong>"Pulse"</strong> animation.</li>
+                    <li>Add a second, different colored envelope icon near the server.</li>
+                    <li>Animate this second envelope with <strong>"Drift"</strong>, setting its path back to the laptop.</li>
+                </ul>
+            </li>
+            <li><strong>Step 5: Adjust Timing.</strong> Open the timeline. Sequence the animations: Laptop Envelope Drift -> Server Pulse -> Server Envelope Drift.</li>
+            <li><strong>Step 6: Download.</strong> Click "Share" → "Download" → "MP4 Video".</li>
+        </ul>
+    </div>
+    <script src="../shared-menu.js" defer></script>
+</body>
+</html>

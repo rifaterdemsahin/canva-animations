@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kubernetes Pods & Nodes</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="menu-placeholder"></div>
+    <div class="container">
+        <h1>Concept: Kubernetes Pods & Nodes</h1>
+
+        <!-- Part 1: Concept -->
+        <h2>🧠 The Concept</h2>
+        <p>In Kubernetes, a `Node` is a worker machine (like a server). A `Pod` is the smallest deployable unit and runs on a Node. Kubernetes automatically schedules Pods to run on available Nodes in the cluster.</p>
+        <pre class="mermaid">
+            graph TD
+                subgraph Worker Node 1
+                    P1[Pod A]
+                    P2[Pod B]
+                end
+                subgraph Worker Node 2
+                    P3[Pod C]
+                end
+                User -- Deploys App --> K8s[Kubernetes Control Plane]
+                K8s -- Schedules --> P1
+                K8s -- Schedules --> P2
+                K8s -- Schedules --> P3
+        </pre>
+
+        <!-- Part 2: Animation Idea -->
+        <h2>🎬 Animation Idea</h2>
+        <p>This simplifies the abstract Kubernetes scheduler logic into an easy-to-understand "Tetris" like visual, where pods are placed into available slots on nodes.</p>
+        <video src="../animations/5-kubernetes-pods.mp4" autoplay loop muted playsinline style="width:100%; max-width:500px; display:block; margin: 20px auto; border-radius: 8px; background-color: #21262d;"></video>
+
+        <!-- Part 3: Steps in Canva -->
+        <h2>📝 Steps in Canva</h2>
+        <ol>
+            <li><strong>Nodes:</strong> Create large squares to represent Nodes.</li>
+            <li><strong>Pods:</strong> Create smaller circles to represent Pods.</li>
+            <li><strong>Scheduling:</strong> Animate the Pod circles floating down and landing inside the Node squares using the <strong>"Drift"</strong> animation.</li>
+        </ol>
+
+        <!-- Part 4: Process in Detail -->
+        <h2>🖱️ Process in Detail</h2>
+        <p>Follow these clicks to create the animation in Canva:</p>
+        <ul>
+            <li><strong>Step 1: Setup.</strong> Create a new "Video" design.</li>
+            <li><strong>Step 2: Create Nodes.</strong> In "Elements", add two large square shapes at the bottom of the canvas. These are your Nodes.</li>
+            <li><strong>Step 3: Create Pods.</strong> Add several smaller circle shapes at the top of the canvas. These are your Pods.</li>
+            <li><strong>Step 4: Animate Scheduling.</strong>
+                <ul>
+                    <li>Select one of the Pod circles.</li>
+                    <li>Click "Animate" and choose the <strong>"Drift"</strong> animation.</li>
+                    <li>In the animation settings, you can draw a path for the Pod to follow, guiding it into one of the Node squares.</li>
+                    <li>Repeat this for all Pods, scheduling them into the available Nodes.</li>
+                </ul>
+            </li>
+            <li><strong>Step 5: Adjust Timing.</strong> Use the timeline to stagger the animations so the pods appear to be scheduled one after another.</li>
+            <li><strong>Step 6: Download.</strong> Click "Share" → "Download" → "MP4 Video".</li>
+        </ul>
+    </div>
+    <script src="../shared-menu.js" defer></script>
+</body>
+</html>

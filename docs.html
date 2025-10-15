@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Workflow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu-placeholder"></div>
+    <div class="container" id="docs-content">
+        <h1>Loading...</h1>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="shared-menu.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('gemini.md')
+                .then(response => response.text())
+                .then(text => {
+                    const docsContent = document.getElementById('docs-content');
+                    // Using marked.parse to convert Markdown to HTML
+                    docsContent.innerHTML = marked.parse(text);
+                })
+                .catch(err => {
+                    console.error('Failed to load docs:', err);
+                    document.getElementById('docs-content').innerHTML = '<h1>Error loading document.</h1>';
+                });
+        });
+    </script>
+</body>
+</html>

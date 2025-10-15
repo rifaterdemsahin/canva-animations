@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prometheus Scraping</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="menu-placeholder"></div>
+    <div class="container">
+        <h1>Concept: Prometheus Scraping</h1>
+
+        <!-- Part 1: Concept -->
+        <h2>🧠 The Concept</h2>
+        <p>Prometheus is a monitoring system that works by `scraping` (pulling) metrics from applications. It periodically sends an HTTP request to a `/metrics` endpoint on each application to collect data, rather than having the applications push data to it.</p>
+        <pre class="mermaid">
+            sequenceDiagram
+                participant P as Prometheus
+                participant A1 as App 1
+                participant A2 as App 2
+                loop Scrape Interval
+                    P->>A1: Pull /metrics
+                    A1-->>P: Metric data
+                    P->>A2: Pull /metrics
+                    A2-->>P: Metric data
+                end
+        </pre>
+
+        <!-- Part 2: Animation Idea -->
+        <h2>🎬 Animation Idea</h2>
+        <p>This animation clarifies the "pull-based" model of Prometheus, showing it actively going out to gather metrics from different applications in a repeating loop.</p>
+        <video src="../animations/9-prometheus-scraping.mp4" autoplay loop muted playsinline style="width:100%; max-width:500px; display:block; margin: 20px auto; border-radius: 8px; background-color: #21262d;"></video>
+
+        <!-- Part 3: Steps in Canva -->
+        <h2>📝 Steps in Canva</h2>
+        <ol>
+            <li><strong>Icons:</strong> Add a central Prometheus logo and several smaller application icons around it.</li>
+            <li><strong>Scrape:</strong> Animate a magnifying glass icon <strong>"Drifting"</strong> from Prometheus to an application.</li>
+            <li><strong>Pulse:</strong> Make the application icon <strong>"Pulse"</strong> as it gets scraped.</li>
+            <li><strong>Return:</strong> Animate the magnifying glass returning to Prometheus, now carrying a small chart icon with it.</li>
+        </ol>
+
+        <!-- Part 4: Process in Detail -->
+        <h2>🖱️ Process in Detail</h2>
+        <p>Follow these clicks to create the animation in Canva:</p>
+        <ul>
+            <li><strong>Step 1: Setup.</strong> Create a new "Video" design. Place the Prometheus logo in the center and other app icons around it.</li>
+            <li><strong>Step 2: Animate the Scrape.</strong>
+                <ul>
+                    <li>In "Elements", find a "magnifying glass" icon.</li>
+                    <li>Select it, click "Animate", and choose <strong>"Drift"</strong>. Draw a path from Prometheus to the first app.</li>
+                    <li>Select the app icon and give it a <strong>"Pulse"</strong> animation.</li>
+                    <li>Animate the magnifying glass again, this time drifting back to Prometheus.</li>
+                </ul>
+            </li>
+            <li><strong>Step 3: Adjust Timing.</strong> In the timeline, sequence the animations: Drift to App -> App Pulse -> Drift back.</li>
+            <li><strong>Step 4: Repeat.</strong> Duplicate the animations for the other applications, creating a loop.</li>
+            <li><strong>Step 5: Download.</strong> Click "Share" → "Download" → "MP4 Video".</li>
+        </ul>
+    </div>
+    <script src="../shared-menu.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Event Loop</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="menu-placeholder"></div>
+    <div class="container">
+        <h1>Concept: JavaScript Event Loop</h1>
+
+        <!-- Part 1: Concept -->
+        <h2>🧠 The Concept</h2>
+        <p>The JavaScript Event Loop allows JavaScript, which is single-threaded, to handle asynchronous operations. When an async operation (like `setTimeout`) is called, it's handed off to the Web API. When it's done, the callback is placed in the Callback Queue. The Event Loop moves callbacks from the queue to the Call Stack only when the stack is empty.</p>
+        <pre class="mermaid">
+            graph TD
+                A[Call Stack]
+                B[Web API]
+                C[Callback Queue]
+                A -- setTimeout() --> B
+                B -- Timer Finishes --> C
+                A -- Is Empty? --> C
+                C -- Callback --> A
+        </pre>
+
+        <!-- Part 2: Animation Idea -->
+        <h2>🎬 Animation Idea</h2>
+        <p>Animating the journey of an asynchronous task through the different parts of the browser environment makes the complex JavaScript event loop far easier to comprehend than a static diagram.</p>
+        <video src="../animations/10-js-event-loop.mp4" autoplay loop muted playsinline style="width:100%; max-width:500px; display:block; margin: 20px auto; border-radius: 8px; background-color: #21262d;"></video>
+
+        <!-- Part 3: Steps in Canva -->
+        <h2>📝 Steps in Canva</h2>
+        <ol>
+            <li><strong>Boxes:</strong> Create boxes for the "Call Stack," "Web API," and "Callback Queue."</li>
+            <li><strong>Task:</strong> Create a small block representing the async task.</li>
+            <li><strong>Journey:</strong> Animate the task block moving from the Call Stack to the Web API, then to the Callback Queue, and finally back to the Call Stack using <strong>"Drift"</strong>.</li>
+        </ol>
+
+        <!-- Part 4: Process in Detail -->
+        <h2>🖱️ Process in Detail</h2>
+        <p>Follow these clicks to create the animation in Canva:</p>
+        <ul>
+            <li><strong>Step 1: Setup.</strong> Create a new "Video" design. Add three large, labeled boxes for "Call Stack", "Web API", and "Callback Queue".</li>
+            <li><strong>Step 2: Create Task.</strong> Add a small rectangle shape to represent your async task.</li>
+            <li><strong>Step 3: Animate the Journey.</strong>
+                <ul>
+                    <li>Select the task block. Click "Animate" > <strong>"Drift"</strong>. Draw a path for it moving from the Call Stack to the Web API.</li>
+                    <li>Add another <strong>"Drift"</strong> animation for it to move from the Web API to the Callback Queue.</li>
+                    <li>Add a final <strong>"Drift"</strong> animation for it to move from the queue back into the Call Stack.</li>
+                </ul>
+            </li>
+            <li><strong>Step 4: Adjust Timing.</strong> In the timeline, add pauses between each stage of the journey to represent processing time.</li>
+            <li><strong>Step 5: Download.</strong> Click "Share" → "Download" → "MP4 Video".</li>
+        </ul>
+    </div>
+    <script src="../shared-menu.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI/CD Pipeline</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="menu-placeholder"></div>
+    <div class="container">
+        <h1>Concept: CI/CD Pipeline</h1>
+
+        <!-- Part 1: Concept -->
+        <h2>🧠 The Concept</h2>
+        <p>A CI/CD (Continuous Integration/Continuous Deployment) pipeline is an automated process that takes code from a developer's machine to production. It automatically builds, tests, and deploys the application, ensuring changes are delivered reliably and quickly.</p>
+        <pre class="mermaid">
+            graph LR
+                A[Code Commit] --> B(Build Server);
+                B --> C{Run Tests};
+                C -- Pass --> D((Deploy to Production 🚀));
+                C -- Fail --> E[Notify Developers ⚠️];
+        </pre>
+
+        <!-- Part 2: Animation Idea -->
+        <h2>🎬 Animation Idea</h2>
+        <p>This animation transforms a static flowchart into a dynamic process, showing the automated, sequential flow of code moving toward production.</p>
+        <video src="../animations/2-ci-cd.mp4" autoplay loop muted playsinline style="width:100%; max-width:500px; display:block; margin: 20px auto; border-radius: 8px; background-color: #21262d;"></video>
+
+        <!-- Part 3: Steps in Canva -->
+        <h2>📝 Steps in Canva</h2>
+        <ol>
+            <li><strong>Icons:</strong> Add icons for Code, Build (gear), Test (checkmark), and Deploy (rocket).</li>
+            <li><strong>Flow:</strong> Use arrow elements to connect the icons in sequence.</li>
+            <li><strong>Animation:</strong> Animate each step: use <strong>"Wipe"</strong> for the arrows, <strong>"Spin"</strong> for the gear, and <strong>"Rise"</strong> for the rocket.</li>
+            <li><strong>Timing:</strong> Use the timeline to trigger each animation one after the other to show the progression.</li>
+        </ol>
+
+        <!-- Part 4: Process in Detail -->
+        <h2>🖱️ Process in Detail</h2>
+        <p>Follow these clicks to create the animation in Canva:</p>
+        <ul>
+            <li><strong>Step 1: Setup.</strong> Create a new "Video" design in Canva.</li>
+            <li><strong>Step 2: Add Icons & Arrows.</strong> Go to "Elements" and search for "code brackets", "gear", "checkmark", and "rocket ship". Place them in order from left to right. Search for "arrow" and place arrows between them.</li>
+            <li><strong>Step 3: Animate the Flow.</strong>
+                <ul>
+                    <li>Click the first arrow. Select "Animate" > <strong>"Wipe"</strong>. Adjust the direction to match the flow.</li>
+                    <li>Click the gear icon. Select "Animate" > <strong>"Spin"</strong>.</li>
+                    <li>Click the second arrow and apply the <strong>"Wipe"</strong> animation.</li>
+                    <li>Click the checkmark icon. Select "Animate" > <strong>"Stomp"</strong>.</li>
+                    <li>Click the final arrow and apply <strong>"Wipe"</strong>.</li>
+                    <li>Click the rocket icon. Select "Animate" > <strong>"Rise"</strong>. Set the direction to go up and off the screen.</li>
+                </ul>
+            </li>
+            <li><strong>Step 4: Adjust Timing.</strong>
+                <ul>
+                    <li>Open the timeline by clicking "Show timing".</li>
+                    <li>Drag the animation bars so each one starts just as the previous one finishes, creating a chain reaction.</li>
+                </ul>
+            </li>
+            <li><strong>Step 5: Download.</strong> Click "Share" → "Download" → "MP4 Video".</li>
+        </ul>
+    </div>
+    <script src="../shared-menu.js" defer></script>
+</body>
+</html>
