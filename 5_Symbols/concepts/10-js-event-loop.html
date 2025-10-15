@@ -58,7 +58,6 @@
             <div class="collapse" id="animation-10">
                 <div class="animation-content">
                     <p>Animating the journey of an asynchronous task through the different parts of the browser environment makes the complex JavaScript event loop far easier to comprehend than a static diagram.</p>
-                    <p><a href="https://www.youtube.com/watch?v=8aGhZQc_tsI" target="_blank" rel="noopener noreferrer">Watch on YouTube</a></p>
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/8aGhZQc_tsI" title="What the heck is the event loop anyway?" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
@@ -73,26 +72,6 @@
             <li><strong>Task:</strong> Create a small block representing the async task.</li>
             <li><strong>Journey:</strong> Animate the task block moving from the Call Stack to the Web API, then to the Callback Queue, and finally back to the Call Stack using <strong>"Drift"</strong>.</li>
         </ol>
-
-        <!-- Timeline & Timing Guide -->
-        <div class="alert alert-warning bg-dark border-warning mt-4">
-            <h4>⏱️ Timeline & Timing Guide</h4>
-            <p><strong>Total Duration:</strong> 15-18 seconds | <strong>How to Access:</strong> Click "Show timing" at bottom of Canva editor</p>
-            <div class="mt-3">
-                <h6>Recommended Timeline Sequence:</h6>
-                <ul>
-                    <li><strong>0-2s:</strong> Call Stack, Callback Queue, and Event Loop components appear (Rise animation, 1.5s duration)</li>
-                    <li><strong>2-4s:</strong> First function enters call stack (Pop animation, 1s duration)</li>
-                    <li><strong>4-6s:</strong> Async operation moves to Web APIs (Drift animation, 1.5s duration)</li>
-                    <li><strong>6-8s:</strong> Callback arrives in callback queue (Drift animation, 1.5s duration)</li>
-                    <li><strong>8-10s:</strong> Event loop checks stack (Pulse/Breathe animation, continuous)</li>
-                    <li><strong>10-12s:</strong> Callback moves from queue to stack (Drift animation, 1.5s duration)</li>
-                    <li><strong>12-14s:</strong> Callback executes and completes (Pop animation, 1s duration)</li>
-                    <li><strong>14-18s:</strong> Event loop continues monitoring (Rotate/Breathe animation, continuous)</li>
-                </ul>
-                <p class="mt-2"><em>💡 Tip: Use color-coding (sync=blue, async=orange). Event loop arrow should have continuous subtle animation (Breathe).</em></p>
-            </div>
-        </div>
 
         <!-- Part 4: Process in Detail -->
         <h2>🖱️ Process in Detail</h2>
@@ -115,19 +94,8 @@
                 </ul>
             </li>
             <li><strong>Step 4: Adjust Timing.</strong> In the timeline, add pauses between each stage of the journey to represent processing time.</li>
-            <li><strong>Step 6: Download.</strong> Click "Share" → "Download" → "MP4 Video".</li>
-        </ul>
-
-        <!-- Part 5: Final Review Checklist -->
-        <h2>✅ Final Review Checklist</h2>
-        <p>Before downloading your animation, verify these elements are in place:</p>
-        <ul class="checklist">
-            <li>Icons are correctly positioned and visible throughout the animation</li>
-            <li>Animations are timed and sequenced properly (check timeline view)</li>
-            <li>Labels and text are clear and readable at video resolution</li>
-            <li>Export settings are correct (MP4 Video, HD resolution: 1920x1080)</li>
-            <li>Animation loops smoothly if intended for continuous playback</li>
-        </ul>
+            <li><strong>Step 5: Download.</strong> Click "Share" → "Download" → "MP4 Video".</li>
+            </ul>
             </div>
         </div>
     </main>
