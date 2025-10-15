@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <li><a class="dropdown-item" href="render.html?page=../2_environments/deployments.md">Deployments</a></li>
                                 <li><a class="dropdown-item" href="render.html?page=../2_environments/cloud_canva.md">Cloud: Canva</a></li>
                                 <li><a class="dropdown-item" href="render.html?page=../2_environments/local_davinci_resolve.md">Local: DaVinci Resolve</a></li>
+                                <li><a class="dropdown-item" href="../7_testing/index.html">UI Tests</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
