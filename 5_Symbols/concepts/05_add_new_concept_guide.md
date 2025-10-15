@@ -33,7 +33,9 @@ Open the new HTML file and update the following sections:
 9.  **🖱️ Process in Detail**:
     *   Update the **Asset Search Prompts** (`search-prompt-` ID).
     *   Update the detailed step-by-step instructions in the `<ul class="checklist">`.
-10. **Update IDs**: Perform a find-and-replace to update all unique IDs (e.g., `concept-text-10` to `concept-text-11`) to ensure the copy buttons work correctly.
+10. **✅ Final Review Checklist**:
+    *   The checklist section is already present in the template. No changes needed unless you want to add concept-specific review items.
+11. **Update IDs**: Perform a find-and-replace to update all unique IDs (e.g., `concept-text-10` to `concept-text-11`) to ensure the copy buttons work correctly.
 
 ## 3. Update Navigation
 

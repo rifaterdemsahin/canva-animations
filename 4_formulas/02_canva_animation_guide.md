@@ -28,3 +28,13 @@ This guide provides best practices for creating clear and effective animations i
 1.  Click **Share** -> **Download**.
 2.  Select **MP4 Video** as the file type.
 3.  Place the downloaded file into the `/animations` folder in the project.
+
+## 5. Final Review Checklist
+
+Before downloading your animation, verify these critical elements:
+
+*   **Icon Positioning**: All icons are correctly positioned and remain visible throughout the animation.
+*   **Timing & Sequencing**: Animations are timed properly and sequenced in the correct order (verify in timeline view).
+*   **Labels & Text**: All labels and text are clear, readable, and large enough at video resolution.
+*   **Export Settings**: Export format is MP4 Video with HD resolution (1920x1080 recommended).
+*   **Smooth Looping**: If designed to loop, verify the animation transitions smoothly from end to beginning.
