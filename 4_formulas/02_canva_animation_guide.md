@@ -23,6 +23,21 @@ This guide provides best practices for creating clear and effective animations i
 2.  **Animate Elements**: Select each element and apply an animation from the "Animate" panel.
 3.  **Sequence with Timeline**: Click "Show timing" at the bottom of the editor. Drag the animation bars on the timeline to sequence them correctly. Ensure one action follows another logically.
 
+### Timeline Best Practices
+
+*   **Access the Timeline**: Click "Show timing" at the bottom of the Canva editor to reveal the timeline view.
+*   **Animation Bars**: Each animated element appears as a colored bar showing its duration and start time.
+*   **Drag to Sequence**: Click and drag animation bars horizontally to adjust when they start.
+*   **Sequential Flow**: For step-by-step animations, align bars end-to-end (previous animation ends when next begins).
+*   **Overlap for Smoothness**: Overlap bars by 0.5-1s for smoother transitions between elements.
+*   **Stagger Effects**: For multiple similar elements (e.g., commit dots), offset their start times by 0.3-0.5s.
+*   **Recommended Durations**:
+    *   **Pop/Rise**: 1-1.5s for appearance animations
+    *   **Drift/Pan**: 2-3s for movement across the canvas
+    *   **Pulse/Breathe**: 1.5-2s for emphasis or continuous effects
+    *   **Wipe**: 1.5-2.5s for revealing elements or transitions
+*   **Total Video Length**: Aim for 8-15 seconds total to keep animations concise and loopable.
+
 ## 4. Export
 
 1.  Click **Share** -> **Download**.

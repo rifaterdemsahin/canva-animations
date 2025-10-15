@@ -30,12 +30,16 @@ Open the new HTML file and update the following sections:
     *   Update the animation ID in the `data-bs-target` attribute (e.g., `#animation-11`).
 8.  **📝 Steps in Canva**:
     *   Update the high-level `<ol>` list with the new animation steps.
-9.  **🖱️ Process in Detail**:
+9.  **⏱️ Timeline & Timing Guide**:
+    *   Update the recommended timeline sequence with specific durations for each animation element.
+    *   Include total duration estimate and tips for sequencing in Canva's timeline view.
+    *   Specify animation types and durations (e.g., "Rise animation, 1.5s duration").
+10. **🖱️ Process in Detail**:
     *   Update the **Asset Search Prompts** (`search-prompt-` ID).
     *   Update the detailed step-by-step instructions in the `<ul class="checklist">`.
-10. **✅ Final Review Checklist**:
+11. **✅ Final Review Checklist**:
     *   The checklist section is already present in the template. No changes needed unless you want to add concept-specific review items.
-11. **Update IDs**: Perform a find-and-replace to update all unique IDs (e.g., `concept-text-10` to `concept-text-11`) to ensure the copy buttons work correctly.
+12. **Update IDs**: Perform a find-and-replace to update all unique IDs (e.g., `concept-text-10` to `concept-text-11`) to ensure the copy buttons work correctly.
 
 ## 3. Update Navigation
 

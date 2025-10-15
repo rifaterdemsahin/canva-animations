@@ -74,6 +74,26 @@
             <li><strong>Journey:</strong> Animate the task block moving from the Call Stack to the Web API, then to the Callback Queue, and finally back to the Call Stack using <strong>"Drift"</strong>.</li>
         </ol>
 
+        <!-- Timeline & Timing Guide -->
+        <div class="alert alert-warning bg-dark border-warning mt-4">
+            <h4>⏱️ Timeline & Timing Guide</h4>
+            <p><strong>Total Duration:</strong> 15-18 seconds | <strong>How to Access:</strong> Click "Show timing" at bottom of Canva editor</p>
+            <div class="mt-3">
+                <h6>Recommended Timeline Sequence:</h6>
+                <ul>
+                    <li><strong>0-2s:</strong> Call Stack, Callback Queue, and Event Loop components appear (Rise animation, 1.5s duration)</li>
+                    <li><strong>2-4s:</strong> First function enters call stack (Pop animation, 1s duration)</li>
+                    <li><strong>4-6s:</strong> Async operation moves to Web APIs (Drift animation, 1.5s duration)</li>
+                    <li><strong>6-8s:</strong> Callback arrives in callback queue (Drift animation, 1.5s duration)</li>
+                    <li><strong>8-10s:</strong> Event loop checks stack (Pulse/Breathe animation, continuous)</li>
+                    <li><strong>10-12s:</strong> Callback moves from queue to stack (Drift animation, 1.5s duration)</li>
+                    <li><strong>12-14s:</strong> Callback executes and completes (Pop animation, 1s duration)</li>
+                    <li><strong>14-18s:</strong> Event loop continues monitoring (Rotate/Breathe animation, continuous)</li>
+                </ul>
+                <p class="mt-2"><em>💡 Tip: Use color-coding (sync=blue, async=orange). Event loop arrow should have continuous subtle animation (Breathe).</em></p>
+            </div>
+        </div>
+
         <!-- Part 4: Process in Detail -->
         <h2>🖱️ Process in Detail</h2>
         <div class="copy-container">

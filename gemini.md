@@ -66,5 +66,6 @@ Each concept page should follow this 6-part structure to provide a comprehensive
 2.  **🧠 Concept**: A high-level text explanation of the topic and a Mermaid.js diagram showing the static structure.
 3.  **🎬 Animation Idea**: An embedded YouTube video that provides a similar visual explanation of the concept. The video is found via web search and embedded using a responsive `iframe`. This section is collapsible and loads collapsed by default to reduce initial page scroll length.
 4.  **📝 Steps in Canva**: A high-level, numbered list of the animation's components and the Canva effects used.
-5.  **🖱️ Process in Detail**: A detailed, step-by-step guide on how to create the animation in Canva, including where to click and what to search for.
-6.  **✅ Final Review Checklist**: An interactive checklist to verify all elements are correct before downloading the animation, including icon positioning, timing, labels, and export settings.
+5.  **⏱️ Timeline & Timing Guide**: A detailed breakdown of recommended animation timings with specific durations (in seconds) for each element. Includes tips on accessing Canva's timeline view and how to sequence animations properly by dragging animation bars.
+6.  **🖱️ Process in Detail**: A detailed, step-by-step guide on how to create the animation in Canva, including where to click and what to search for.
+7.  **✅ Final Review Checklist**: An interactive checklist to verify all elements are correct before downloading the animation, including icon positioning, timing, labels, and export settings.

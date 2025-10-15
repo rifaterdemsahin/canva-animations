@@ -76,6 +76,24 @@
             <li><strong>Return:</strong> Animate the magnifying glass returning to Prometheus, now carrying a small chart icon with it.</li>
         </ol>
 
+        <!-- Timeline & Timing Guide -->
+        <div class="alert alert-warning bg-dark border-warning mt-4">
+            <h4>⏱️ Timeline & Timing Guide</h4>
+            <p><strong>Total Duration:</strong> 10-12 seconds | <strong>How to Access:</strong> Click "Show timing" at bottom of Canva editor</p>
+            <div class="mt-3">
+                <h6>Recommended Timeline Sequence:</h6>
+                <ul>
+                    <li><strong>0-2s:</strong> Prometheus server appears (Rise animation, 1.5s duration, center)</li>
+                    <li><strong>2-4s:</strong> Application services appear (Pop animation, 1s each, staggered around Prometheus)</li>
+                    <li><strong>4-6s:</strong> First scrape: metrics flow from App 1 to Prometheus (Drift animation, 1.5s duration)</li>
+                    <li><strong>6-8s:</strong> Second scrape: metrics from App 2 (Drift animation, 1.5s duration)</li>
+                    <li><strong>8-10s:</strong> Third scrape: metrics from App 3 (Drift animation, 1.5s duration)</li>
+                    <li><strong>10-12s:</strong> Prometheus pulses showing data collected (Pulse animation, 1.5s duration)</li>
+                </ul>
+                <p class="mt-2"><em>💡 Tip: Stagger metric flows by 2s to show sequential scraping. Use arrow or particle elements for visual flow.</em></p>
+            </div>
+        </div>
+
         <!-- Part 4: Process in Detail -->
         <h2>🖱️ Process in Detail</h2>
         <div class="copy-container">

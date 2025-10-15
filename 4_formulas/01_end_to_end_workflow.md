@@ -16,6 +16,7 @@ This guide outlines the complete process from concept to a published explainer p
 
 *   **Create the Diagram**: Write the Mermaid.js code for the diagram. Follow the best practices in `04_diagrams_with_mermaid.md` to ensure it is reliable.
 *   **Create the Animation**: Build the core animation in Canva. Follow the best practices in `02_canva_animation_guide.md`.
+*   **Plan Timeline & Timing**: Before animating, sketch out the sequence and duration of each animation step. Refer to the Timeline & Timing Guide section in concept examples for recommended durations.
 *   **Review Before Export**: Use the Final Review Checklist (see `02_canva_animation_guide.md`) to verify icon positioning, timing, labels, and export settings before downloading.
 
 ## 3. Advanced Video Editing (Optional)
