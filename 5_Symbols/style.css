@@ -223,3 +223,8 @@ pre, video {
 .checklist li.checked::after {
     transform: rotate(45deg) scale(1);
 }
+
+.build-status {
+    text-align: center;
+    margin: -1rem 0 2.5rem 0;
+}
