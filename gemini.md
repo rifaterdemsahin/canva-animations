@@ -60,11 +60,10 @@ The "Process in Detail" section on each concept page features an interactive che
 
 ## Explainer Page Structure
 
-Each concept page should follow this 4-part structure to provide a comprehensive explanation:
+Each concept page should follow this 5-part structure to provide a comprehensive explanation:
 
-1.  **🧠 Concept**: A high-level text explanation of the topic and a Mermaid.js diagram showing the static structure.
-## 🎬 Animation Idea
-
-This section now features an embedded YouTube video that provides a similar visual explanation of the concept. The video is found via web search and embedded using a responsive `iframe`. This replaces the previous self-hosted MP4 animations.
-3.  **📝 Steps in Canva**: A high-level, numbered list of the animation's components and the Canva effects used.
-4.  **🖱️ Process in Detail**: A detailed, step-by-step guide on how to create the animation in Canva, including where to click and what to search for.
+1.  **🎯 Educational Objective**: A highlighted section explaining *why* this animation matters for learners. This clarifies the educational value by showing how the visualization bridges theory and practice, making abstract concepts tangible and actionable.
+2.  **🧠 Concept**: A high-level text explanation of the topic and a Mermaid.js diagram showing the static structure.
+3.  **🎬 Animation Idea**: An embedded YouTube video that provides a similar visual explanation of the concept. The video is found via web search and embedded using a responsive `iframe`. This section is collapsible and loads collapsed by default to reduce initial page scroll length.
+4.  **📝 Steps in Canva**: A high-level, numbered list of the animation's components and the Canva effects used.
+5.  **🖱️ Process in Detail**: A detailed, step-by-step guide on how to create the animation in Canva, including where to click and what to search for.

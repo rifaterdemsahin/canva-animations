@@ -15,6 +15,12 @@
             <div class="col-lg-10 col-xl-8 mx-auto">
                 <h1>Concept: JavaScript Event Loop</h1>
 
+        <!-- Educational Objective -->
+        <div class="alert alert-info bg-dark border-info">
+            <h5>🎯 Why This Matters</h5>
+            <p>This animation reveals the hidden mechanism behind JavaScript's asynchronous behavior. By visualizing how the call stack, callback queue, and event loop interact, learners understand why code executes in a specific order—essential for debugging async code and writing performant JavaScript applications.</p>
+        </div>
+
         <!-- Part 1: Concept -->
         <div class="copy-container">
             <h2>🧠 The Concept</h2>
@@ -43,11 +49,21 @@
             <p>As a video production assistant creating assets for an online video course, generate a minimalist diagram of the JavaScript event loop with three labeled boxes: Call Stack, Web API, and Callback Queue, and a task block moving between them. The style should be a clean, vector diagram for an educational animation.</p>
         </div>
 
-        <!-- Part 2: Animation Idea -->
-        <h2>🎬 Animation Idea</h2>
-        <p>Animating the journey of an asynchronous task through the different parts of the browser environment makes the complex JavaScript event loop far easier to comprehend than a static diagram.</p>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/8aGhZQc_tsI" title="What the heck is the event loop anyway?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!-- Part 2: Animation Idea (Collapsible) -->
+        <div class="animation-section">
+            <button class="animation-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#animation-10" aria-expanded="false" aria-controls="animation-10">
+                🎬 Animation Idea
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="collapse" id="animation-10">
+                <div class="animation-content">
+                    <p>Animating the journey of an asynchronous task through the different parts of the browser environment makes the complex JavaScript event loop far easier to comprehend than a static diagram.</p>
+                    <p><a href="https://www.youtube.com/watch?v=8aGhZQc_tsI" target="_blank" rel="noopener noreferrer">Watch on YouTube</a></p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/8aGhZQc_tsI" title="What the heck is the event loop anyway?" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Part 3: Steps in Canva -->

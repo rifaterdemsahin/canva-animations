@@ -18,15 +18,16 @@ This is a **visual learning platform** that explains technical concepts through 
 - **`5_Symbols/copy-button.js`**: Copy-to-clipboard functionality using `data-copy-target` attribute pattern
 - **`5_Symbols/checklist.js`**: Interactive checklist toggles with CSS animations
 - **`5_Symbols/mermaid-init.js`**: Mermaid.js initialization (dark theme, strict security) - imported by all concept pages
-- **`5_Symbols/concepts/*.html`**: Individual concept explainer pages following 4-part structure
+- **`5_Symbols/concepts/*.html`**: Individual concept explainer pages following 5-part structure
 
 ## Content Creation Workflow
 
 ### When Adding New Concept Pages
 1. **Duplicate** an existing concept HTML from `5_Symbols/concepts/` as template
-2. **Structure** must follow this exact 4-part format:
+2. **Structure** must follow this exact 5-part format:
+   - 🎯 **Educational Objective**: Bootstrap alert explaining why the animation matters (bridges theory/practice)
    - 🧠 **Concept**: Text explanation + Mermaid diagram (static structure)
-   - 🎬 **Animation Idea**: Embedded YouTube video (responsive iframe, not self-hosted MP4)
+   - 🎬 **Animation Idea**: Embedded YouTube video (responsive iframe, collapsible section, loads collapsed)
    - 📝 **Steps in Canva**: High-level numbered list of animation components
    - 🖱️ **Process in Detail**: Step-by-step guide with interactive `<ul class="checklist">` items
 3. **Update navigation** in TWO places:

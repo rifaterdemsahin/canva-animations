@@ -14,22 +14,26 @@ Open the new HTML file and update the following sections:
 
 1.  **`<title>`**: Change the page title.
 2.  **`<h1>`**: Update the main heading.
-3.  **🧠 The Concept**:
+3.  **🎯 Educational Objective**:
+    *   Update the text inside the `<div class="alert alert-info bg-dark border-info">` explaining why this animation matters for learners.
+    *   Focus on how the visualization bridges theory and practice, making abstract concepts tangible.
+4.  **🧠 The Concept**:
     *   Update the text explanation inside the `<div>` with the `concept-text-` ID.
     *   Write the new **Mermaid.js diagram** code inside the `<pre class="mermaid">` block.
-4.  **🎨 AI Image Prompt**:
+5.  **🎨 AI Image Prompt**:
     *   Write a new prompt for generating visual assets for the Canva animation.
-5.  **🔊 Sound Effects Prompt**:
+6.  **🔊 Sound Effects Prompt** (if present):
     *   Write a new prompt for generating sound effects with an AI tool like ElevenLabs.
-6.  **🎬 Animation Idea**:
+7.  **🎬 Animation Idea**:
     *   Find a relevant YouTube video that explains the concept visually.
     *   Update the `<iframe>` `src` and `title` attributes with the new video's details.
-7.  **📝 Steps in Canva**:
+    *   Update the animation ID in the `data-bs-target` attribute (e.g., `#animation-11`).
+8.  **📝 Steps in Canva**:
     *   Update the high-level `<ol>` list with the new animation steps.
-8.  **🖱️ Process in Detail**:
+9.  **🖱️ Process in Detail**:
     *   Update the **Asset Search Prompts** (`search-prompt-` ID).
     *   Update the detailed step-by-step instructions in the `<ul class="checklist">`.
-9.  **Update IDs**: Perform a find-and-replace to update all unique IDs (e.g., `concept-text-10` to `concept-text-11`) to ensure the copy buttons work correctly.
+10. **Update IDs**: Perform a find-and-replace to update all unique IDs (e.g., `concept-text-10` to `concept-text-11`) to ensure the copy buttons work correctly.
 
 ## 3. Update Navigation
 

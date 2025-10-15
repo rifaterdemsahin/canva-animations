@@ -5,14 +5,12 @@ This guide outlines the complete process from concept to a published explainer p
 ## 1. Conceptualize & Storyboard
 
 *   **Isolate the Core Idea**: Before creating anything, clearly define the single most important takeaway for the concept.
-*   **Plan the 3 Components**: Sketch out the three parts of the explanation:
-    1.  **The Text**: A simple paragraph explaining the concept.
-    2.  **The Diagram**: The static structure, to be built with Mermaid.js.
-    3.  **The Animation**: The dynamic action or transformation, to be built in Canva.
+*   **Define the Educational Objective**: Write 1-2 sentences explaining *why* this animation is valuable for beginners—how does it bridge the gap between theory and practice? What abstract concept does it make tangible?
+*   **Plan the 4 Components**: Sketch out the four parts of the explanation:
     1.  **Text**: A simple paragraph explaining the concept.
     2.  **Diagram**: The static structure, to be built with Mermaid.js.
-    3.  **Animation**: The dynamic action or transformation, to be built in Canva.
-    4.  **Sound**: A prompt for generating sound effects that match the animation's style.
+    3.  **Animation**: The dynamic action or transformation, to be built in Canva or found as an embedded YouTube video.
+    4.  **Sound**: A prompt for generating sound effects that match the animation's style (optional).
 
 ## 2. Asset Creation (Parallel Tasks)
 
