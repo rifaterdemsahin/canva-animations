@@ -22,15 +22,15 @@
         <pre class="mermaid">
             graph TD
                 subgraph "User Interaction"
-                    User("User") -- "Deploys App" --> K8s("Kubernetes Control Plane")
+                    User("User 🧑‍💻") -- "Deploys App" --> K8s("Kubernetes Control Plane")
                 end
                 subgraph "Cluster"
                     subgraph "Worker Node 1"
-                        P1["Pod A"]
-                        P2["Pod B"]
+                        P1["Pod A 📦"]
+                        P2["Pod B 📦"]
                     end
                     subgraph "Worker Node 2"
-                        P3["Pod C"]
+                        P3["Pod C 📦"]
                     end
                 end
                 K8s -- "Schedules" --> P1

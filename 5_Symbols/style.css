@@ -121,13 +121,34 @@ a:hover {
 
 
 /* --- Content Blocks --- */
-/* Style for Mermaid diagrams and other code blocks */
-pre, video {
+/* Style for Mermaid diagrams */
+pre {
     background-color: #21262d;
     border: 1px solid #30363d;
     padding: 1.5rem;
     border-radius: 8px;
     margin-bottom: 1.5rem;
+}
+
+/* Responsive video container */
+.video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    margin: 20px auto;
+    border-radius: 8px;
+    background-color: #21262d;
+    border: 1px solid #30363d;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 .mermaid svg {

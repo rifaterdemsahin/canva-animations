@@ -62,6 +62,8 @@ The "Process in Detail" section on each concept page features an interactive che
 Each concept page should follow this 4-part structure to provide a comprehensive explanation:
 
 1.  **🧠 Concept**: A high-level text explanation of the topic and a Mermaid.js diagram showing the static structure.
-2.  **🎬 Animation Idea**: The embedded looping MP4 video showing the concept in action.
+## 🎬 Animation Idea
+
+This section now features an embedded YouTube video that provides a similar visual explanation of the concept. The video is found via web search and embedded using a responsive `iframe`. This replaces the previous self-hosted MP4 animations.
 3.  **📝 Steps in Canva**: A high-level, numbered list of the animation's components and the Canva effects used.
 4.  **🖱️ Process in Detail**: A detailed, step-by-step guide on how to create the animation in Canva, including where to click and what to search for.
