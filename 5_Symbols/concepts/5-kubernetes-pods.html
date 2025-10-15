@@ -51,20 +51,20 @@
             <p>As a video production assistant creating assets for an online video course, generate a cloud computing diagram. Show large simple squares (Worker Nodes) and smaller circles (Pods) being placed inside them. The style should be minimalist, vector, and easy to understand for an educational animation.</p>
         </div>
 
-        <!-- Sound Effects Prompt -->
-        <div class="copy-container">
-            <h4>🔊 Sound Effects Prompt</h4>
-            <button class="copy-btn" data-copy-target="#sfx-prompt-5">Copy Prompt</button>
-        </div>
-        <div id="sfx-prompt-5">
-            <p>Generate sound effects for a short tech animation. I need: 1. A series of gentle 'whoosh' or 'float' sounds for small circles drifting downwards. 2. A soft 'thud' or 'click' sound each time a circle lands inside a square. The style should be clean and minimalist.</p>
-        </div>
-
-        <!-- Part 2: Animation Idea -->
-        <h2>🎬 Animation Idea</h2>
-        <p>This simplifies the abstract Kubernetes scheduler logic into an easy-to-understand "Tetris" like visual, where pods are placed into available slots on nodes.</p>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/s_o8dwzRlu4" title="Kubernetes in 100 Seconds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!-- Part 2: Animation Idea (Collapsible) -->
+        <div class="animation-section">
+            <button class="animation-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#animation-5" aria-expanded="false" aria-controls="animation-5">
+                🎬 Animation Idea
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="collapse" id="animation-5">
+                <div class="animation-content">
+                    <p>This simplifies the abstract Kubernetes scheduler logic into an easy-to-understand "Tetris" like visual, where pods are placed into available slots on nodes.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/s_o8dwzRlu4" title="Kubernetes in 100 Seconds" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Part 3: Steps in Canva -->
@@ -109,5 +109,8 @@
     <script src="shared-menu.js" defer></script>
     <script src="copy-button.js" defer></script>
     <script src="checklist.js" defer></script>
+</body>
+</html>
+<div id="footer-placeholder"></div>
 </body>
 </html>

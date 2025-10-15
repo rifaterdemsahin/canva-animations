@@ -9,6 +9,10 @@ This guide outlines the complete process from concept to a published explainer p
     1.  **The Text**: A simple paragraph explaining the concept.
     2.  **The Diagram**: The static structure, to be built with Mermaid.js.
     3.  **The Animation**: The dynamic action or transformation, to be built in Canva.
+    1.  **Text**: A simple paragraph explaining the concept.
+    2.  **Diagram**: The static structure, to be built with Mermaid.js.
+    3.  **Animation**: The dynamic action or transformation, to be built in Canva.
+    4.  **Sound**: A prompt for generating sound effects that match the animation's style.
 
 ## 2. Asset Creation (Parallel Tasks)
 
