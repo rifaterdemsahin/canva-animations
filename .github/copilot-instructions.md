@@ -17,6 +17,7 @@ This is a **visual learning platform** that explains technical concepts through 
 - **`5_Symbols/shared-menu.js`**: Centralized navigation menu injected into all pages via `#header-placeholder`
 - **`5_Symbols/copy-button.js`**: Copy-to-clipboard functionality using `data-copy-target` attribute pattern
 - **`5_Symbols/checklist.js`**: Interactive checklist toggles with CSS animations
+- **`5_Symbols/mermaid-init.js`**: Mermaid.js initialization (dark theme, strict security) - imported by all concept pages
 - **`5_Symbols/concepts/*.html`**: Individual concept explainer pages following 4-part structure
 
 ## Content Creation Workflow
@@ -105,3 +106,4 @@ Use responsive iframe pattern (16:9 aspect ratio maintained via padding-bottom t
 - Test copy buttons work (check browser console for clipboard API errors)
 - Validate responsive layout on mobile (Bootstrap grid: `col-lg-10 col-xl-8 mx-auto`)
 - Check navigation dropdown links work from both index and concept pages
+- Ensure Mermaid diagrams render correctly (all pages use shared `mermaid-init.js`)
