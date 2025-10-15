@@ -16,10 +16,10 @@
         <p>A CI/CD (Continuous Integration/Continuous Deployment) pipeline is an automated process that takes code from a developer's machine to production. It automatically builds, tests, and deploys the application, ensuring changes are delivered reliably and quickly.</p>
         <pre class="mermaid">
             graph LR
-                A[Code Commit] --> B(Build Server);
-                B --> C{Run Tests};
-                C -- Pass --> D((Deploy to Production 🚀));
-                C -- Fail --> E[Notify Developers ⚠️];
+                A["Code Commit"] --> B("Build Server");
+                B --> C{"Run Tests"};
+                C -- "Pass" --> D(("Deploy to Production 🚀"));
+                C -- "Fail" --> E["Notify Developers ⚠️"];
         </pre>
 
         <!-- Part 2: Animation Idea -->

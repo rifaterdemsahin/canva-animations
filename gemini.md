@@ -24,6 +24,14 @@ We are using a Gemini agent to accelerate the development process. The workflow 
 
 This collaborative process allows for rapid prototyping and iteration, combining the agent's coding and content generation capabilities with the user's design skills in Canva.
 
+## Mermaid.js Best Practices
+
+To ensure Mermaid diagrams render correctly and avoid syntax errors, follow these "safe syntax" guidelines:
+
+1.  **Quote All Text**: Always enclose text for nodes, subgraphs, and links in double quotes (`"`). This prevents issues with special characters, spaces, or keywords.
+2.  **Use Explicit IDs**: For nodes and subgraphs, define a short, explicit ID without spaces or special characters (e.g., `subgraph mySubgraphId ["My Subgraph Title"]`).
+3.  **Keep it Simple**: Avoid overly complex features like in-graph styling unless necessary. A clear structure is more important than complex visuals.
+
 ## Explainer Page Structure
 
 Each concept page should follow this 4-part structure to provide a comprehensive explanation:

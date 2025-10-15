@@ -16,17 +16,21 @@
         <p>In Kubernetes, a `Node` is a worker machine (like a server). A `Pod` is the smallest deployable unit and runs on a Node. Kubernetes automatically schedules Pods to run on available Nodes in the cluster.</p>
         <pre class="mermaid">
             graph TD
-                subgraph Worker Node 1
-                    P1[Pod A]
-                    P2[Pod B]
+                subgraph "User Interaction"
+                    User("User") -- "Deploys App" --> K8s("Kubernetes Control Plane")
                 end
-                subgraph Worker Node 2
-                    P3[Pod C]
+                subgraph "Cluster"
+                    subgraph "Worker Node 1"
+                        P1["Pod A"]
+                        P2["Pod B"]
+                    end
+                    subgraph "Worker Node 2"
+                        P3["Pod C"]
+                    end
                 end
-                User -- Deploys App --> K8s[Kubernetes Control Plane]
-                K8s -- Schedules --> P1
-                K8s -- Schedules --> P2
-                K8s -- Schedules --> P3
+                K8s -- "Schedules" --> P1
+                K8s -- "Schedules" --> P2
+                K8s -- "Schedules" --> P3
         </pre>
 
         <!-- Part 2: Animation Idea -->

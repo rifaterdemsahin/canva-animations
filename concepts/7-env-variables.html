@@ -16,13 +16,13 @@
         <p>Environment variables are values that live outside of an application's code, in the environment where the app runs. They are used to configure an application, for example, to store sensitive data like API keys instead of writing them directly in the code.</p>
         <pre class="mermaid">
             graph LR
-                subgraph External Config
-                    A[.env file <br> API_KEY=xyz123]
+                subgraph "External Config"
+                    A[".env file<br>API_KEY=xyz123"]
                 end
-                subgraph Docker Container
-                    B{App reads <br> process.env.API_KEY}
+                subgraph "Docker Container"
+                    B{"App reads<br>process.env.API_KEY"}
                 end
-                A -- Injected at Runtime --> B
+                A -- "Injected at Runtime" --> B
         </pre>
 
         <!-- Part 2: Animation Idea -->

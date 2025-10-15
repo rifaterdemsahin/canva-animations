@@ -16,13 +16,13 @@
         <p>The JavaScript Event Loop allows JavaScript, which is single-threaded, to handle asynchronous operations. When an async operation (like `setTimeout`) is called, it's handed off to the Web API. When it's done, the callback is placed in the Callback Queue. The Event Loop moves callbacks from the queue to the Call Stack only when the stack is empty.</p>
         <pre class="mermaid">
             graph TD
-                A[Call Stack]
-                B[Web API]
-                C[Callback Queue]
-                A -- setTimeout() --> B
-                B -- Timer Finishes --> C
-                A -- Is Empty? --> C
-                C -- Callback --> A
+                A["Call Stack"]
+                B["Web API"]
+                C["Callback Queue"]
+                A -- "setTimeout()" --> B
+                B -- "Timer Finishes" --> C
+                A -- "Is Empty?" --> C
+                C -- "Callback" --> A
         </pre>
 
         <!-- Part 2: Animation Idea -->
