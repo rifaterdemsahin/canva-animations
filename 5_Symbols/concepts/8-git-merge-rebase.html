@@ -68,12 +68,32 @@
         <!-- Part 3: Steps in Canva -->
         <h2>📝 Steps in Canva</h2>
         <ol>
-            <li><strong>Branches:</strong> Show two separate branches (lines with commits).</li>
-            <li><strong>Merge:</strong> Animate two lines from the ends of both branches coming together to form a new "merge commit" using <strong>"Wipe"</strong>.</li>
-            <li><strong>Rebase:</strong> Animate the feature branch's commits lifting off and re-attaching one-by-one to the end of the main branch using <strong>"Pop"</strong> or <strong>"Drift"</strong>.</li>
+            <li><strong>Two Scenarios:</strong> Create side-by-side visualizations for Merge vs Rebase.</li>
+            <li><strong>Merge Side:</strong> Show feature branch merging back with a merge commit.</li>
+            <li><strong>Rebase Side:</strong> Show commits being replayed linearly on top of main.</li>
+            <li><strong>Highlight Difference:</strong> Use different colors or arrows to emphasize the structural difference.</li>
         </ol>
 
-        <!-- Part 4: Process in Detail -->
+        <!-- Timeline & Timing Guide -->
+        <div class="alert alert-warning bg-dark border-warning mt-4">
+            <h4>⏱️ Timeline & Timing Guide</h4>
+            <p><strong>Total Duration:</strong> 14-16 seconds | <strong>How to Access:</strong> Click "Show timing" at bottom of Canva editor</p>
+            <div class="mt-3">
+                <h6>Recommended Timeline Sequence:</h6>
+                <ul>
+                    <li><strong>0-3s:</strong> Both main branches appear (Wipe animation, 2s duration, simultaneous)</li>
+                    <li><strong>3-5s:</strong> Both feature branches diverge (Wipe animation, 1.5s duration)</li>
+                    <li><strong>5-7s:</strong> Commits appear on both branches (Pop animation, staggered)</li>
+                    <li><strong>7-10s:</strong> LEFT: Merge operation shows merge commit (Wipe + Pop, 2.5s duration)</li>
+                    <li><strong>7-10s:</strong> RIGHT: Rebase shows commits being replayed (Pop animation, sequential, 2.5s duration)</li>
+                    <li><strong>10-12s:</strong> Labels appear: "MERGE" and "REBASE" (Pop animation, 1s each)</li>
+                    <li><strong>12-16s:</strong> Highlight differences (Pulse or color change, 2s duration)</li>
+                </ul>
+                <p class="mt-2"><em>💡 Tip: Animate both sides simultaneously up to step 5, then diverge to show different outcomes. Use split-screen layout.</em></p>
+            </div>
+        </div>
+
+        <!-- Part 4: Process in Detail -->        <!-- Part 4: Process in Detail -->
         <h2>🖱️ Process in Detail</h2>
         <div class="copy-container">
             <h4>🔍 Asset Search Prompts</h4>
