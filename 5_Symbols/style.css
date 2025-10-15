@@ -228,3 +228,9 @@ pre, video {
     text-align: center;
     margin: -1rem 0 2.5rem 0;
 }
+
+.last-deployed {
+    font-size: 0.8rem;
+    color: #8b949e;
+    margin-top: 0.5rem;
+}

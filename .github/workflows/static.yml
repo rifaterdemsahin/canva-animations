@@ -33,6 +33,10 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Inject deployment date
+        run: |
+          # Replace the placeholder with the current UTC date
+          sed -i "s|__DEPLOY_DATE__|$(date -u '+%Y-%m-%d %H:%M:%S UTC')|g" 5_Symbols/index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
