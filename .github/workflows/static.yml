@@ -35,8 +35,12 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Inject deployment date
         run: |
-          # Replace the placeholder with the current UTC date
-          sed -i "s|__DEPLOY_DATE__|$(date -u '+%Y-%m-%d %H:%M:%S UTC')|g" 5_Symbols/index.html
+          echo "Injecting date into 5_Symbols/index.html"
+          CURRENT_DATE=$(date -u '+%Y-%m-%d %H:%M:%S UTC')
+          echo "Current date is $CURRENT_DATE"
+          sed -i "s|__DEPLOY_DATE__|$CURRENT_DATE|g" 5_Symbols/index.html
+          echo "sed command finished. Verifying replacement:"
+          grep "$CURRENT_DATE" 5_Symbols/index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
