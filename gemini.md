@@ -23,3 +23,12 @@ We are using a Gemini agent to accelerate the development process. The workflow 
 4.  **Iteration & Deployment**: The agent assists with refining the content based on feedback and executing the `git` commands to deploy the updated site to GitHub Pages.
 
 This collaborative process allows for rapid prototyping and iteration, combining the agent's coding and content generation capabilities with the user's design skills in Canva.
+
+## Explainer Page Structure
+
+Each concept page should follow this 4-part structure to provide a comprehensive explanation:
+
+1.  **🧠 Concept**: A high-level text explanation of the topic and a Mermaid.js diagram showing the static structure.
+2.  **🎬 Animation Idea**: The embedded looping MP4 video showing the concept in action.
+3.  **📝 Steps in Canva**: A high-level, numbered list of the animation's components and the Canva effects used.
+4.  **🖱️ Process in Detail**: A detailed, step-by-step guide on how to create the animation in Canva, including where to click and what to search for.
