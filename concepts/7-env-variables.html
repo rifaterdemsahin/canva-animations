@@ -17,10 +17,10 @@
         <pre class="mermaid">
             graph LR
                 subgraph "External Config"
-                    A[".env file<br>API_KEY=xyz123"]
+                    A[".env file<br/>API_KEY=xyz123"]
                 end
                 subgraph "Docker Container"
-                    B{"App reads<br>process.env.API_KEY"}
+                    B{"App reads<br/>process.env.API_KEY"}
                 end
                 A -- "Injected at Runtime" --> B
         </pre>

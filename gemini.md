@@ -31,6 +31,7 @@ To ensure Mermaid diagrams render correctly and avoid syntax errors, follow thes
 1.  **Quote All Text**: Always enclose text for nodes, subgraphs, and links in double quotes (`"`). This prevents issues with special characters, spaces, or keywords.
 2.  **Use Explicit IDs**: For nodes and subgraphs, define a short, explicit ID without spaces or special characters (e.g., `subgraph mySubgraphId ["My Subgraph Title"]`).
 3.  **Keep it Simple**: Avoid overly complex features like in-graph styling unless necessary. A clear structure is more important than complex visuals.
+4.  **Handle Multiline Text**: For text that needs to span multiple lines inside a node, use a `<br/>` tag within a single-line string. Do not use actual newlines inside the node's text definition (e.g., `A["First line<br/>Second line"]`).
 
 ## Explainer Page Structure
 
