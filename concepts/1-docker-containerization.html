@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker Containerization</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Concept: Docker Containerization</h1>
+
+        <p>
+            Docker works by packaging an application, along with all its necessary libraries and dependencies, into a single, isolated unit called a "container." This container can then run on any machine with Docker installed, ensuring it works the same everywhere.
+        </p>
+
+        <pre class="mermaid">
+            graph TD
+                subgraph host["Host Machine"]
+                    subgraph container["Docker Container 📦"]
+                        direction LR
+                        app["Application Code"] --> deps["Dependencies & Libraries"]
+                    end
+                end
+
+                container --> deployed["Runs Anywhere!"]
+        </pre>
+
+        <h2>Animation Idea (using Canva)</h2>
+        <p>
+            To visually explain this, you can create a short, looping video in Canva. This animation makes the concept of "packaging" tangible.
+        </p>
+        
+        <!-- Video placeholder -->
+        <video src="../animations/1-docker.mp4" autoplay loop muted playsinline style="width:100%; max-width:500px; display:block; margin: 20px auto; border-radius: 8px; background-color: #21262d;"></video>
+
+        <h3>Steps in Canva:</h3>
+        <ol>
+            <li><strong>Objects:</strong> Start with an application icon (like a Python logo) and a few smaller "dependency" icons (gears, cubes) floating separately.</li>
+            <li><strong>Container:</strong> Have a shipping container icon use the <strong>"Drift"</strong> animation to slide in from the side.</li>
+            <li><strong>Packaging:</strong> As the container stops, animate the app and dependency icons to shrink and arrange themselves inside it using the <strong>"Pop"</strong> animation.</li>
+        </ol>
+        <p>
+            <strong>Why it works:</strong> This visually reinforces the core idea of Docker—packaging an application and all its needs into one self-contained, portable unit.
+        </p>
+
+    </div>
+
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true, theme: 'dark' });
+    </script>
+</body>
+</html>
