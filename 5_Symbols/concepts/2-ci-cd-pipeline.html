@@ -12,8 +12,13 @@
         <h1>Concept: CI/CD Pipeline</h1>
 
         <!-- Part 1: Concept -->
-        <h2>🧠 The Concept</h2>
-        <p>A CI/CD (Continuous Integration/Continuous Deployment) pipeline is an automated process that takes code from a developer's machine to production. It automatically builds, tests, and deploys the application, ensuring changes are delivered reliably and quickly.</p>
+        <div class="copy-container">
+            <h2>🧠 The Concept</h2>
+            <button class="copy-btn" data-copy-target="#concept-text-2">Copy Text</button>
+        </div>
+        <div id="concept-text-2">
+            <p>A CI/CD (Continuous Integration/Continuous Deployment) pipeline is an automated process that takes code from a developer's machine to production. It automatically builds, tests, and deploys the application, ensuring changes are delivered reliably and quickly.</p>
+        </div>
         <pre class="mermaid">
             graph LR
                 A["Code Commit"] --> B("Build Server");
@@ -21,6 +26,15 @@
                 C -- "Pass" --> D(("Deploy to Production"));
                 C -- "Fail" --> E["Notify Developers"];
         </pre>
+
+        <!-- AI Image Prompt -->
+        <div class="copy-container">
+            <h2>🎨 AI Image Prompt</h2>
+            <button class="copy-btn" data-copy-target="#image-prompt-2">Copy Prompt</button>
+        </div>
+        <div id="image-prompt-2">
+            <p>Minimalist tech icons for a flowchart: code brackets, a gear, a checkmark, and a rocket ship. Simple, clean vector style.</p>
+        </div>
 
         <!-- Part 2: Animation Idea -->
         <h2>🎬 Animation Idea</h2>
@@ -70,5 +84,6 @@
         });
     </script>
     <script src="../shared-menu.js" defer></script>
+    <script src="../copy-button.js" defer></script>
 </body>
 </html>

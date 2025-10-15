@@ -12,8 +12,13 @@
         <h1>Concept: Prometheus Scraping</h1>
 
         <!-- Part 1: Concept -->
-        <h2>🧠 The Concept</h2>
-        <p>Prometheus is a monitoring system that works by `scraping` (pulling) metrics from applications. It periodically sends an HTTP request to a `/metrics` endpoint on each application to collect data, rather than having the applications push data to it.</p>
+        <div class="copy-container">
+            <h2>🧠 The Concept</h2>
+            <button class="copy-btn" data-copy-target="#concept-text-9">Copy Text</button>
+        </div>
+        <div id="concept-text-9">
+            <p>Prometheus is a monitoring system that works by `scraping` (pulling) metrics from applications. It periodically sends an HTTP request to a `/metrics` endpoint on each application to collect data, rather than having the applications push data to it.</p>
+        </div>
         <pre class="mermaid">
             sequenceDiagram
                 participant P as Prometheus
@@ -26,6 +31,15 @@
                     A2-->>P: Metric data
                 end
         </pre>
+
+        <!-- AI Image Prompt -->
+        <div class="copy-container">
+            <h2>🎨 AI Image Prompt</h2>
+            <button class="copy-btn" data-copy-target="#image-prompt-9">Copy Prompt</button>
+        </div>
+        <div id="image-prompt-9">
+            <p>A central Prometheus logo icon, with several smaller application icons around it. A magnifying glass moves from Prometheus to an app and back. Monitoring system diagram, vector style.</p>
+        </div>
 
         <!-- Part 2: Animation Idea -->
         <h2>🎬 Animation Idea</h2>
@@ -68,5 +82,6 @@
         });
     </script>
     <script src="../shared-menu.js" defer></script>
+    <script src="../copy-button.js" defer></script>
 </body>
 </html>

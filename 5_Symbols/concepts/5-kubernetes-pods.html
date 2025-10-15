@@ -12,8 +12,13 @@
         <h1>Concept: Kubernetes Pods & Nodes</h1>
 
         <!-- Part 1: Concept -->
-        <h2>🧠 The Concept</h2>
-        <p>In Kubernetes, a `Node` is a worker machine (like a server). A `Pod` is the smallest deployable unit and runs on a Node. Kubernetes automatically schedules Pods to run on available Nodes in the cluster.</p>
+        <div class="copy-container">
+            <h2>🧠 The Concept</h2>
+            <button class="copy-btn" data-copy-target="#concept-text-5">Copy Text</button>
+        </div>
+        <div id="concept-text-5">
+            <p>In Kubernetes, a `Node` is a worker machine (like a server). A `Pod` is the smallest deployable unit and runs on a Node. Kubernetes automatically schedules Pods to run on available Nodes in the cluster.</p>
+        </div>
         <pre class="mermaid">
             graph TD
                 subgraph "User Interaction"
@@ -32,6 +37,15 @@
                 K8s -- "Schedules" --> P2
                 K8s -- "Schedules" --> P3
         </pre>
+
+        <!-- AI Image Prompt -->
+        <div class="copy-container">
+            <h2>🎨 AI Image Prompt</h2>
+            <button class="copy-btn" data-copy-target="#image-prompt-5">Copy Prompt</button>
+        </div>
+        <div id="image-prompt-5">
+            <p>Large simple squares labeled Worker Node, with smaller circles labeled Pod being placed inside them by a central controller. Cloud computing diagram, vector, minimalist.</p>
+        </div>
 
         <!-- Part 2: Animation Idea -->
         <h2>🎬 Animation Idea</h2>
@@ -74,5 +88,6 @@
         });
     </script>
     <script src="../shared-menu.js" defer></script>
+    <script src="../copy-button.js" defer></script>
 </body>
 </html>

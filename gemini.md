@@ -33,6 +33,18 @@ To ensure Mermaid diagrams render correctly and avoid syntax errors, follow thes
 3.  **Keep it Simple**: Avoid overly complex features like in-graph styling unless necessary. A clear structure is more important than complex visuals.
 4.  **Handle Multiline Text**: For text that needs to span multiple lines inside a node, use a `<br/>` tag within a single-line string. Do not use actual newlines inside the node's text definition (e.g., `A["First line<br/>Second line"]`).
 
+## Copy-to-Clipboard Feature
+
+To make the content more reusable, each concept page includes "Copy" buttons for key information.
+
+*   **Functionality**: A shared JavaScript file (`5_Symbols/copy-button.js`) provides the copy-to-clipboard logic.
+*   **Implementation**:
+    1.  The content to be copied is placed within a container with a unique ID (e.g., `<div id="concept-text-docker">...</div>`).
+    2.  A button is added with a `copy-btn` class and a `data-copy-target` attribute pointing to the ID of the content to be copied (e.g., `<button class="copy-btn" data-copy-target="#concept-text-docker">Copy</button>`).
+*   **Content to Copy**:
+    1.  **Concept Text**: The main explanation paragraph.
+    2.  **AI Image Prompt**: A new section containing a text prompt designed for AI image generators to create the visual assets needed for the Canva animation.
+
 ## Explainer Page Structure
 
 Each concept page should follow this 4-part structure to provide a comprehensive explanation:

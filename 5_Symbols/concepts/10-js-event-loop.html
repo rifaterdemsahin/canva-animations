@@ -12,8 +12,13 @@
         <h1>Concept: JavaScript Event Loop</h1>
 
         <!-- Part 1: Concept -->
-        <h2>🧠 The Concept</h2>
-        <p>The JavaScript Event Loop allows JavaScript, which is single-threaded, to handle asynchronous operations. When an async operation (like `setTimeout`) is called, it's handed off to the Web API. When it's done, the callback is placed in the Callback Queue. The Event Loop moves callbacks from the queue to the Call Stack only when the stack is empty.</p>
+        <div class="copy-container">
+            <h2>🧠 The Concept</h2>
+            <button class="copy-btn" data-copy-target="#concept-text-10">Copy Text</button>
+        </div>
+        <div id="concept-text-10">
+            <p>The JavaScript Event Loop allows JavaScript, which is single-threaded, to handle asynchronous operations. When an async operation (like `setTimeout`) is called, it's handed off to the Web API. When it's done, the callback is placed in the Callback Queue. The Event Loop moves callbacks from the queue to the Call Stack only when the stack is empty.</p>
+        </div>
         <pre class="mermaid">
             graph TD
                 A["Call Stack"]
@@ -24,6 +29,15 @@
                 A -- "Is Empty?" --> C
                 C -- "Callback" --> A
         </pre>
+
+        <!-- AI Image Prompt -->
+        <div class="copy-container">
+            <h2>🎨 AI Image Prompt</h2>
+            <button class="copy-btn" data-copy-target="#image-prompt-10">Copy Prompt</button>
+        </div>
+        <div id="image-prompt-10">
+            <p>Three labeled boxes: Call Stack, Web API, and Callback Queue. A small task block moves between them in a sequence. JavaScript event loop diagram, minimalist, vector style.</p>
+        </div>
 
         <!-- Part 2: Animation Idea -->
         <h2>🎬 Animation Idea</h2>
@@ -64,5 +78,6 @@
         });
     </script>
     <script src="../shared-menu.js" defer></script>
+    <script src="../copy-button.js" defer></script>
 </body>
 </html>

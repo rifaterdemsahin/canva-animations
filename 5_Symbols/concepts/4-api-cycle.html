@@ -12,8 +12,13 @@
         <h1>Concept: API Request/Response</h1>
 
         <!-- Part 1: Concept -->
-        <h2>🧠 The Concept</h2>
-        <p>An API (Application Programming Interface) allows two computer systems to communicate. One system (the client) sends a `request` for data, and the other system (the server) sends back a `response` containing the data or a status message.</p>
+        <div class="copy-container">
+            <h2>🧠 The Concept</h2>
+            <button class="copy-btn" data-copy-target="#concept-text-4">Copy Text</button>
+        </div>
+        <div id="concept-text-4">
+            <p>An API (Application Programming Interface) allows two computer systems to communicate. One system (the client) sends a `request` for data, and the other system (the server) sends back a `response` containing the data or a status message.</p>
+        </div>
         <pre class="mermaid">
             sequenceDiagram
                 participant Client
@@ -23,6 +28,15 @@
                 Server-->>Client: 200 OK [JSON Data] (Response)
                 deactivate Server
         </pre>
+
+        <!-- AI Image Prompt -->
+        <div class="copy-container">
+            <h2>🎨 AI Image Prompt</h2>
+            <button class="copy-btn" data-copy-target="#image-prompt-4">Copy Prompt</button>
+        </div>
+        <div id="image-prompt-4">
+            <p>A laptop icon labeled Client and a server icon labeled Server, with a data packet arrow moving from client to server (Request) and another arrow moving back (Response). Network diagram, minimalist.</p>
+        </div>
 
         <!-- Part 2: Animation Idea -->
         <h2>🎬 Animation Idea</h2>
@@ -70,5 +84,6 @@
         });
     </script>
     <script src="../shared-menu.js" defer></script>
+    <script src="../copy-button.js" defer></script>
 </body>
 </html>

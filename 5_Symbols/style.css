@@ -134,3 +134,31 @@ pre, video {
     display: block;
     margin: 0 auto; /* Center within the pre block */
 }
+
+.copy-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy-btn {
+    background-color: #30363d;
+    color: #c9d1d9;
+    border: 1px solid #444c56;
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.copy-btn:hover {
+    background-color: #444c56;
+}
+
+.copy-btn:disabled {
+    background-color: #2ea043;
+    border-color: #2ea043;
+    cursor: default;
+}

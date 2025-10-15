@@ -12,8 +12,13 @@
         <h1>Concept: Environment Variables</h1>
 
         <!-- Part 1: Concept -->
-        <h2>🧠 The Concept</h2>
-        <p>Environment variables are values that live outside of an application's code, in the environment where the app runs. They are used to configure an application, for example, to store sensitive data like API keys instead of writing them directly in the code.</p>
+        <div class="copy-container">
+            <h2>🧠 The Concept</h2>
+            <button class="copy-btn" data-copy-target="#concept-text-7">Copy Text</button>
+        </div>
+        <div id="concept-text-7">
+            <p>Environment variables are values that live outside of an application's code, in the environment where the app runs. They are used to configure an application, for example, to store sensitive data like API keys instead of writing them directly in the code.</p>
+        </div>
         <pre class="mermaid">
             graph LR
                 subgraph "External Config"
@@ -24,6 +29,15 @@
                 end
                 A -- "Injected at Runtime" --> B
         </pre>
+
+        <!-- AI Image Prompt -->
+        <div class="copy-container">
+            <h2>🎨 AI Image Prompt</h2>
+            <button class="copy-btn" data-copy-target="#image-prompt-7">Copy Prompt</button>
+        </div>
+        <div id="image-prompt-7">
+            <p>A file icon labeled .env and a Docker container icon. A key icon moves from the file to the container, replacing placeholder text. Tech diagram, vector style.</p>
+        </div>
 
         <!-- Part 2: Animation Idea -->
         <h2>🎬 Animation Idea</h2>
@@ -70,5 +84,6 @@
         });
     </script>
     <script src="../shared-menu.js" defer></script>
+    <script src="../copy-button.js" defer></script>
 </body>
 </html>

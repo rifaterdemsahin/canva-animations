@@ -12,10 +12,15 @@
         <h1>Concept: Docker Containerization</h1>
 
         <!-- Part 1: Concept -->
-        <h2>🧠 The Concept</h2>
-        <p>
-            Docker works by packaging an application, along with all its necessary libraries and dependencies, into a single, isolated unit called a "container." This container can then run on any machine with Docker installed, ensuring it works the same everywhere.
-        </p>
+        <div class="copy-container">
+            <h2>🧠 The Concept</h2>
+            <button class="copy-btn" data-copy-target="#concept-text-1">Copy Text</button>
+        </div>
+        <div id="concept-text-1">
+            <p>
+                Docker works by packaging an application, along with all its necessary libraries and dependencies, into a single, isolated unit called a "container." This container can then run on any machine with Docker installed, ensuring it works the same everywhere.
+            </p>
+        </div>
 
         <!-- Mermaid Diagram is part of the concept -->
         <pre class="mermaid">
@@ -29,6 +34,15 @@
 
                 container --> deployed["Runs Anywhere!"]
         </pre>
+
+        <!-- AI Image Prompt -->
+        <div class="copy-container">
+            <h2>🎨 AI Image Prompt</h2>
+            <button class="copy-btn" data-copy-target="#image-prompt-1">Copy Prompt</button>
+        </div>
+        <div id="image-prompt-1">
+            <p>Clean, simple icons for a tech diagram: a python logo, a gear icon, a cube icon, and a shipping container. Minimalist, vector style, on a neutral background.</p>
+        </div>
 
         <!-- Part 2: Animation Idea -->
         <h2>🎬 Animation Idea</h2>
@@ -90,5 +104,6 @@
         });
     </script>
     <script src="../shared-menu.js" defer></script>
+    <script src="../copy-button.js" defer></script>
 </body>
 </html>

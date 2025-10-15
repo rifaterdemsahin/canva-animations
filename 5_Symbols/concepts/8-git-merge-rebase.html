@@ -12,8 +12,13 @@
         <h1>Concept: Git Merge vs. Rebase</h1>
 
         <!-- Part 1: Concept -->
-        <h2>🧠 The Concept</h2>
-        <p>`git merge` and `git rebase` are two ways to integrate changes from one branch into another. `merge` creates a new "merge commit" that ties the two histories together. `rebase` rewrites history by replaying commits from the feature branch on top of the main branch, resulting in a linear history.</p>
+        <div class="copy-container">
+            <h2>🧠 The Concept</h2>
+            <button class="copy-btn" data-copy-target="#concept-text-8">Copy Text</button>
+        </div>
+        <div id="concept-text-8">
+            <p>`git merge` and `git rebase` are two ways to integrate changes from one branch into another. `merge` creates a new "merge commit" that ties the two histories together. `rebase` rewrites history by replaying commits from the feature branch on top of the main branch, resulting in a linear history.</p>
+        </div>
         <pre class="mermaid">
             graph TD
                 subgraph "Result of Git Merge"
@@ -24,6 +29,15 @@
                     D["main"] --> E["feature's work"] --> F["re-applied"]
                 end
         </pre>
+
+        <!-- AI Image Prompt -->
+        <div class="copy-container">
+            <h2>🎨 AI Image Prompt</h2>
+            <button class="copy-btn" data-copy-target="#image-prompt-8">Copy Prompt</button>
+        </div>
+        <div id="image-prompt-8">
+            <p>Two diagrams side-by-side comparing Git Merge (two branches joining at a new commit) and Git Rebase (one branch's commits moving to the end of another). Clean, vector, tech flowchart.</p>
+        </div>
 
         <!-- Part 2: Animation Idea -->
         <h2>🎬 Animation Idea</h2>
@@ -67,5 +81,6 @@
         });
     </script>
     <script src="../shared-menu.js" defer></script>
+    <script src="../copy-button.js" defer></script>
 </body>
 </html>
