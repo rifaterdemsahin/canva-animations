@@ -44,6 +44,7 @@ To make the content more reusable, each concept page includes "Copy" buttons for
 *   **Content to Copy**:
     1.  **Concept Text**: The main explanation paragraph.
     2.  **AI Image Prompt**: A new section containing a text prompt designed for AI image generators to create the visual assets needed for the Canva animation.
+    3.  **Asset Search Prompt**: A simple search query string (e.g., "minimalist gear icon vector") that can be pasted into Google Images or Canva's element search to find visual assets.
         *   The prompt should include context that it's for a "video production assistant" creating assets for an "online video course" to guide the style.
 
 ## Interactive Checklists
