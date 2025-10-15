@@ -23,7 +23,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     <a href="${pathPrefix}concepts/10-js-event-loop.html">10. Event Loop</a>
                 </div>
             </div>
-            <a href="${pathPrefix}docs.html">📄 Workflow Docs</a>
+            <div class="dropdown">
+                <a href="#">📄 Workflow</a>
+                <div class="dropdown-content">
+                    <a href="${pathPrefix}render.html?page=../gemini.md">Overall Process</a>
+                    <a href="${pathPrefix}render.html?page=../4_formulas/01_end_to_end_workflow.md">1. End-to-End Workflow</a>
+                    <a href="${pathPrefix}render.html?page=../4_formulas/02_canva_animation_guide.md">2. Canva Guide</a>
+                    <a href="${pathPrefix}render.html?page=../4_formulas/03_advanced_video_with_davinci.md">3. DaVinci Guide</a>
+                    <a href="${pathPrefix}render.html?page=../4_formulas/04_diagrams_with_mermaid.md">4. Mermaid Guide</a>
+                </div>
+            </div>
         </nav>
     `;
 

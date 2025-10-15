@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Workflow Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu-placeholder"></div>
+    <div class="container" id="render-content">
+        <h1>Loading...</h1>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="shared-menu.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const page = params.get('page');
+
+            if (page) {
+                // Basic security check to ensure we are only fetching local markdown files
+                if (page.startsWith('../') && page.endsWith('.md')) {
+                    fetch(page)
+                        .then(response => response.ok ? response.text() : Promise.reject('File not found'))
+                        .then(text => {
+                            document.getElementById('render-content').innerHTML = marked.parse(text);
+                        })
+                        .catch(err => {
+                            console.error('Failed to load content:', err);
+                            document.getElementById('render-content').innerHTML = '<h1>Error: Document not found.</h1>';
+                        });
+                } else {
+                     document.getElementById('render-content').innerHTML = '<h1>Error: Invalid document path.</h1>';
+                }
+            } else {
+                document.getElementById('render-content').innerHTML = '<h1>No document specified.</h1>';
+            }
+        });
+    </script>
+</body>
+</html>
