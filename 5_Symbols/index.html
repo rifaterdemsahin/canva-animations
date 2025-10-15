@@ -2,47 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tech Concept Explanations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Tech Concepts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div id="menu-placeholder"></div>
-    <div class="container">
-        <h1>Animated Tech Concepts</h1>
-        <div class="build-status">
-            <a href="https://github.com/rifaterdemsahin/canva-animations/actions/workflows/static.yml" target="_blank" rel="noopener noreferrer" title="View Build Status">
-                <img src="https://github.com/rifaterdemsahin/canva-animations/actions/workflows/static.yml/badge.svg" alt="Build Status">
-            </a>
-            <p class="last-deployed">Last Deployed: __DEPLOY_DATE__</p>
-        </div>
+<body class="bg-dark text-light">
+    <header id="header-placeholder"></header>
 
-                <p>A collection of complex topics explained with simple diagrams using Mermaid.js.</p>
-        <ul>
-            <li><a href="concepts/1-docker-containerization.html">Docker Containerization</a></li>
-            <li><a href="concepts/2-ci-cd-pipeline.html">CI/CD Pipeline</a></li>
-            <li><a href="concepts/3-git-branching.html">Git Branching</a></li>
-            <li><a href="concepts/4-api-cycle.html">API Request/Response</a></li>
-            <li><a href="concepts/5-kubernetes-pods.html">Kubernetes Pods & Nodes</a></li>
-            <li><a href="concepts/6-css-box-model.html">CSS Box Model</a></li>
-            <li><a href="concepts/7-env-variables.html">Environment Variables</a></li>
-            <li><a href="concepts/8-git-merge-rebase.html">Git Merge vs. Rebase</a></li>
-            <li><a href="concepts/9-prometheus-scraping.html">Prometheus Scraping</a></li>
-            <li><a href="concepts/10-js-event-loop.html">JavaScript Event Loop</a></li>
-        </ul>
+    <main class="container text-center" style="margin-top: 80px;">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <h1 class="display-4 my-4">Animated Tech Concepts</h1>
+                
+                <div class="build-status">
+                    <a href="https://github.com/rifaterdemsahin/canva-animations/actions/workflows/static.yml" target="_blank" rel="noopener noreferrer" title="View Build Status">
+                        <img src="https://github.com/rifaterdemsahin/canva-animations/actions/workflows/static.yml/badge.svg" alt="Build Status">
+                    </a>
+                    <p class="last-deployed" style="font-size: 0.8rem; color: #8b949e;">Last Deployed: __DEPLOY_DATE__</p>
+                </div>
 
-        <div class="activity-chart">
-            <a href="https://github.com/rifaterdemsahin/canva-animations" target="_blank" rel="noopener noreferrer" title="View Repository Stats">
-                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rifaterdemsahin&repo=canva-animations&layout=compact&theme=dark&hide_border=true" alt="Top Languages">
-            </a>
-        </div>
-        <div class="activity-chart">
-            <a href="https://github.com/rifaterdemsahin/canva-animations" target="_blank" rel="noopener noreferrer" title="View Repository Stats">
-                <img src="https://github-readme-stats.vercel.app/api?username=rifaterdemsahin&repo=canva-animations&show_icons=true&theme=dark&hide_border=true" alt="GitHub Stats">
-            </a>
-        </div>
+                <p class="lead">A collection of complex topics explained with simple diagrams and embedded videos.</p>
+                
+                <div class="list-group my-5">
+                    <a href="./concepts/1-docker-containerization.html" class="list-group-item list-group-item-action list-group-item-dark">1. Docker Containerization</a>
+                    <a href="./concepts/2-ci-cd-pipeline.html" class="list-group-item list-group-item-action list-group-item-dark">2. CI/CD Pipeline</a>
+                    <a href="./concepts/3-git-branching.html" class="list-group-item list-group-item-action list-group-item-dark">3. Git Branching</a>
+                    <a href="./concepts/4-api-cycle.html" class="list-group-item list-group-item-action list-group-item-dark">4. API Request/Response</a>
+                    <a href="./concepts/5-kubernetes-pods.html" class="list-group-item list-group-item-action list-group-item-dark">5. Kubernetes Pods & Nodes</a>
+                    <a href="./concepts/6-css-box-model.html" class="list-group-item list-group-item-action list-group-item-dark">6. CSS Box Model</a>
+                    <a href="./concepts/7-env-variables.html" class="list-group-item list-group-item-action list-group-item-dark">7. Environment Variables</a>
+                    <a href="./concepts/8-git-merge-rebase.html" class="list-group-item list-group-item-action list-group-item-dark">8. Git Merge vs. Rebase</a>
+                    <a href="./concepts/9-prometheus-scraping.html" class="list-group-item list-group-item-action list-group-item-dark">9. Prometheus Scraping</a>
+                    <a href="./concepts/10-js-event-loop.html" class="list-group-item list-group-item-action list-group-item-dark">10. JavaScript Event Loop</a>
+                </div>
 
-    </div>
+                <div class="activity-chart">
+                    <a href="https://github.com/rifaterdemsahin/canva-animations" target="_blank" rel="noopener noreferrer" title="View Repository Stats">
+                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rifaterdemsahin&repo=canva-animations&layout=compact&theme=dark&hide_border=true" alt="Top Languages">
+                    </a>
+                </div>
+                <div class="activity-chart">
+                    <a href="https://github.com/rifaterdemsahin/canva-animations" target="_blank" rel="noopener noreferrer" title="View Repository Stats">
+                        <img src="https://github-readme-stats.vercel.app/api?username=rifaterdemsahin&repo=canva-animations&show_icons=true&theme=dark&hide_border=true" alt="GitHub Stats">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
     <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="shared-menu.js" defer></script>
 </body>
 </html>
