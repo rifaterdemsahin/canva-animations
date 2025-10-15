@@ -264,3 +264,67 @@ pre {
 .activity-chart img {
     max-width: 100%;
 }
+
+/* --- Footer --- */
+.footer {
+    border-top: 1px solid #30363d;
+    margin-top: 4rem;
+    padding: 2rem 0;
+    color: #8b949e;
+}
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.footer-section {
+    text-align: center;
+    flex-grow: 1;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #8b949e;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.social-link:hover {
+    color: #58a6ff;
+}
+.social-link svg {
+    width: 24px;
+    height: 24px;
+}
+.support-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #30363d;
+    color: #c9d1d9;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+.support-btn:hover {
+    background-color: #444c56;
+}
+.support-btn svg {
+    width: 20px;
+    height: 20px;
+}
+.footer-text {
+    font-size: 0.9rem;
+    margin: 0;
+}
