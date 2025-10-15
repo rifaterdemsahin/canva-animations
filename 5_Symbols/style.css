@@ -162,3 +162,64 @@ pre, video {
     border-color: #2ea043;
     cursor: default;
 }
+
+/* --- Interactive Checklist --- */
+.checklist {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.checklist li {
+    cursor: pointer;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    transition: color 0.3s;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard */
+}
+
+/* Custom checkmark box */
+.checklist li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #444c56;
+    background-color: #21262d;
+    border-radius: 4px;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+/* The checkmark symbol (hidden by default) */
+.checklist li::after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 13px;
+    width: 6px;
+    height: 12px;
+    border: solid #2ea043; /* Green color */
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg) scale(0); /* Start scaled down */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Style for checked items */
+.checklist li.checked {
+    color: #8b949e; /* Dim the text */
+    text-decoration: line-through;
+}
+
+.checklist li.checked::before {
+    background-color: #238636;
+    border-color: #2ea043;
+}
+
+/* Animate the checkmark in */
+.checklist li.checked::after {
+    transform: rotate(45deg) scale(1);
+}

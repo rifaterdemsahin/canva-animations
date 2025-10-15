@@ -46,6 +46,16 @@ To make the content more reusable, each concept page includes "Copy" buttons for
     2.  **AI Image Prompt**: A new section containing a text prompt designed for AI image generators to create the visual assets needed for the Canva animation.
         *   The prompt should include context that it's for a "video production assistant" creating assets for an "online video course" to guide the style.
 
+## Interactive Checklists
+
+The "Process in Detail" section on each concept page features an interactive checklist to help track progress.
+
+*   **Functionality**: A shared JavaScript file (`5_Symbols/checklist.js`) handles the logic.
+*   **Implementation**:
+    1.  The `<ul>` element for the detailed process is given the class `checklist`.
+    2.  CSS is used to style the list items as checklist entries with custom checkmarks.
+    3.  The JavaScript listens for clicks on these list items and toggles a `checked` class, which triggers the visual change (green checkmark, line-through text) and a CSS animation.
+
 ## Explainer Page Structure
 
 Each concept page should follow this 4-part structure to provide a comprehensive explanation:

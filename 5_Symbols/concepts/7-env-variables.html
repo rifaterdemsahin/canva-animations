@@ -56,17 +56,17 @@
         <!-- Part 4: Process in Detail -->
         <h2>🖱️ Process in Detail</h2>
         <p>Follow these clicks to create the animation in Canva:</p>
-        <ul>
+        <ul class="checklist">
             <li><strong>Step 1: Setup.</strong> Create a new "Video" design.</li>
             <li><strong>Step 2: Add Elements.</strong> In "Elements", add a "file" icon and a "docker" or "container" icon. Add text inside the container like `[API_KEY]`.</li>
             <li><strong>Step 3: Animate Injection.</strong>
-                <ul>
+                <ul class="checklist">
                     <li>Add a text element next to the file icon with the secret value (e.g., `xyz123`).</li>
                     <li>Select this text element, click "Animate" > <strong>"Drift"</strong>, and set its path to move over the placeholder text in the container.</li>
                 </ul>
             </li>
             <li><strong>Step 4: Animate Replacement.</strong>
-                <ul>
+                <ul class="checklist">
                     <li>Select the placeholder text. Click "Animate" > <strong>"Fade"</strong> and set it to "On Exit".</li>
                     <li>Select the secret value text again. Add a second animation: <strong>"Fade"</strong> set to "On Enter".</li>
                 </ul>
@@ -85,5 +85,6 @@
     </script>
     <script src="../shared-menu.js" defer></script>
     <script src="../copy-button.js" defer></script>
+    <script src="../checklist.js" defer></script>
 </body>
 </html>
