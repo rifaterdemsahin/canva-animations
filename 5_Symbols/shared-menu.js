@@ -38,6 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <li><a class="dropdown-item" href="render.html?page=../4_formulas/02_canva_animation_guide.md">2. Canva Guide</a></li>
                                 <li><a class="dropdown-item" href="render.html?page=../4_formulas/03_advanced_video_with_davinci.md">3. DaVinci Guide</a></li>
                                 <li><a class="dropdown-item" href="render.html?page=../4_formulas/04_diagrams_with_mermaid.md">4. Mermaid Guide</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="../7_testing/index.html">UI Tests</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
