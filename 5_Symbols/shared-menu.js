@@ -20,7 +20,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     <a href="${pathPrefix}concepts/7-env-variables.html">7. Env Variables</a>
                     <a href="${pathPrefix}concepts/8-git-merge-rebase.html">8. Git Merge/Rebase</a>
                     <a href="${pathPrefix}concepts/9-prometheus-scraping.html">9. Prometheus</a>
-                    <a href="${pathPrefix}concepts/10-js-event-loop.html">10. Event Loop</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">🌍 Environments</a>
+                <div class="dropdown-content">
+                    <a href="${pathPrefix}render.html?page=../2_environments/deployments.md">Deployments</a>
+                    <a href="${pathPrefix}render.html?page=../2_environments/cloud_canva.md">Cloud: Canva</a>
+                    <a href="${pathPrefix}render.html?page=../2_environments/local_davinci_resolve.md">Local: DaVinci Resolve</a>
                 </div>
             </div>
             <div class="dropdown">
