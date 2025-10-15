@@ -71,6 +71,39 @@ async function runAllTests() {
                 throw new Error(`Failed to load with status ${response.status}`);
             }
         });
+
+        await runTest(`Concept Page '${pageName}' Mermaid diagrams should render`, () => {
+            return new Promise((resolve, reject) => {
+                const testFrame = document.createElement('iframe');
+                testFrame.style.display = 'none';
+                testFrame.src = url;
+
+                testFrame.onload = () => {
+                    try {
+                        const doc = testFrame.contentWindow.document;
+                        const diagrams = doc.querySelectorAll('.mermaid');
+                        if (diagrams.length === 0) { // No diagrams on this page, so test passes.
+                            resolve();
+                            return;
+                        }
+                        // Mermaid.js replaces the div with an SVG. If an SVG child exists, it rendered.
+                        assertExists('.mermaid > svg', doc, 'A Mermaid diagram failed to render into an SVG.');
+                        resolve();
+                    } catch (e) {
+                        reject(e);
+                    } finally {
+                        document.body.removeChild(testFrame);
+                    }
+                };
+
+                testFrame.onerror = () => {
+                    reject(new Error('Iframe failed to load the page for diagram testing.'));
+                    document.body.removeChild(testFrame);
+                };
+
+                document.body.appendChild(testFrame);
+            });
+        });
     }
 }
 
