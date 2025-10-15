@@ -1,6 +1,6 @@
 # todo
 
-1. Clarify the Educational Objective
+1. Clarify the Educational Objective :inprogress
 
 • Add a sentence or two explaining why this animation is useful for beginners. For example, “This helps learners understand the fundamental flow of API communication in a way that bridges the gap between theory and practice.”
 
